@@ -1,10 +1,14 @@
 package query;
+
+import link.ListNode;
+
 public class BinarySearch {
     public static void main(String args[]) {
         int[] intArray=new int[]{1,2,3,4,5,6,7,8,9};
         for(int i=0;i<intArray.length;i++){
             test1(intArray,intArray[i]);
         }
+
     }
     public static void test1(int[] intArray,int target){
         boolean exist=binarySearch(intArray,target);
