@@ -13,6 +13,20 @@ public class TreeUtil {
             preOrder(root.getRight());
         }
     }
+    public static void inOrder(TreeNode root){
+        if (root!=null){
+            inOrder(root.left);
+            System.out.println(root.val);
+            inOrder(root.right);
+        }
+    }
+    public static void postOrder(TreeNode root){
+        if (root!=null){
+            postOrder(root.left);
+            postOrder(root.right);
+            System.out.println(root.val);
+        }
+    }
     public static TreeNode create(int[] array){
         if (array.length==0)return null;
         Queue<TreeNode> linkedList=new LinkedList();
