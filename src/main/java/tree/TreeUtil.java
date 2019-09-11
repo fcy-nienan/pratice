@@ -5,7 +5,6 @@ import java.util.Queue;
 import java.util.logging.Logger;
 
 public class TreeUtil {
-    private static Logger logger = Logger.getLogger(TreeUtil.class.getName());
     public static void preOrder(TreeNode root){
         if (root!=null){
             System.out.print(root.getVal()+"\t");
@@ -27,6 +26,7 @@ public class TreeUtil {
             System.out.println(root.val);
         }
     }
+
     public static TreeNode create(int[] array){
         if (array.length==0)return null;
         Queue<TreeNode> linkedList=new LinkedList();
