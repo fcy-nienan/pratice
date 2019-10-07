@@ -13,20 +13,17 @@ public class deleteDuplicates {
     //输出: 1->2->5
     public static ListNode deleteDuplicatesII(ListNode head){
         if (head==null||head.next==null)return head;
-        ListNode dummy=new ListNode(0);
-        ListNode prev=dummy,current=head,next=current.next,pointer=dummy;
-        while (current!=null&&next!=null){
-            if (current.val!=prev.val&&current.val!=next.val){
-                pointer.next=current;
-                pointer=pointer.next;
+        ListNode dummy=new ListNode();
+        ListNode prev=dummy,current=prev.next,next=current.next;
+        int lastReduce=-999;
+//        12233445  1222335 12223335    12233
+        while(next!=null){
+            if (current.val!=prev.val&&current.val!=next.val&&current.val!=lastReduce){
+                prev=current;
+                current=prev.next;
+                next=current.next;
             }
-            prev=current;
-            current=current.next;
-            next=next.next;
         }
-        if (current.val!=prev.val)
-            pointer.next=current;
-        current.next=null;
         return dummy.next;
     }
     //输入: 1->1->2
