@@ -6,13 +6,16 @@ import java.util.List;
 
 public abstract class abstractSort {
     private int sortCount=10000;
-    private int arrayLen=1000;
+    private int arrayLen=10000;
     protected List<String> disOrderList=new ArrayList();
     protected List<String> sequenceList=new ArrayList();
     protected List<String> reserveList=new ArrayList();
     public abstractSort sortCount(int sortCount){
         this.sortCount=sortCount;
         return this;
+    }
+    public int getArrayLen(){
+        return this.arrayLen;
     }
     public abstractSort arrayLen(int arrayLen){
         this.arrayLen=arrayLen;

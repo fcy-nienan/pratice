@@ -6,11 +6,6 @@ public class heapSort extends abstractSort{
 
     public static void main(String args[]) {
         new heapSort().execute();
-        int i=16;
-        for(int j=0;j<33;j++){
-            i=i<<1;
-            System.out.println(i);
-        }
     }
 
     @Override

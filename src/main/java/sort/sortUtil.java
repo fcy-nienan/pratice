@@ -6,6 +6,11 @@ public class sortUtil {
     public static void main(String args[]) {
 
     }
+    public static void swap(int[] array,int i,int j){
+        int tmp=array[i];
+        array[i]=array[j];
+        array[j]=tmp;
+    }
     //    判断一个数组是否有序?
 //    返回值:-1逆序  0无序   1 正序
 //    这个判断数组是否有序的程序更加合理
