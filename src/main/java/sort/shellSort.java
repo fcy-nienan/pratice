@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 public class shellSort extends abstractSort{
     public static void main(String args[]) {
         new shellSort().execute();
@@ -7,28 +9,36 @@ public class shellSort extends abstractSort{
 
     @Override
     protected void sort(int[] array) {
-        shell(array);
-    }
-    public static void insertSortSingle(int[] array,int d,int i){
-        int j=i-d;
-        int value=array[i];
-        while (j>=0&&value<array[j]){
-            array[j]=array[j-d];
-            j-=d;
-        }
-        array[j+d]=value;
+        shellSort(array);
     }
     public static void shell(int[] array){
         for(int gap=array.length/2;gap>0;gap=gap/2){
             for (int j=0;j<gap;j++){
-                insertSortSingle(array,gap,j);
+                for (int k=j+gap;k<array.length;k=k+gap){
+                    int value=array[k];
+                    int m=k-gap;
+                    while (m>=0&&array[m]>value){
+                        array[m+gap]=array[m];
+                        m=m-gap;
+                    }
+                    array[m+gap]=value;
+                }
             }
         }
     }
     public static void shellSort(int[] array){
-        for (int gap=array.length/2;gap>0;gap=gap/2){
-            int j=0;
-
+        int gap=array.length;
+        while (gap>=1){
+            gap=gap/2;
+            for(int i=gap;i<array.length;i++){
+                int value=array[i];
+                int j=i-gap;
+                while (j>=0&&array[j]>value){
+                    array[j+gap]=array[j];
+                    j=j-gap;
+                }
+                array[j+gap]=value;
+            }
         }
     }
     public static void insertSort(int[] array){

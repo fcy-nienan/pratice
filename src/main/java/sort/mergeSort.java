@@ -40,4 +40,61 @@ public class mergeSort extends abstractSort{
             array[start++]=tmp[t++];
         }
     }
+    public static void adjustHeap(int[] array,int current,int len){
+        for(int min=current*2+1;min<len;min=min*2+1){
+            if (min+1<len&&array[min]>array[min+1]){
+                min=min+1;
+            }
+            if (array[min]<array[current]){
+                sortUtil.swap(array,min,current);
+                current=min;
+            }else{
+                break;
+            }
+        }
+    }
+    public static void heapSort(int[] array){
+        for(int i=array.length/2-1;i>=0;i--){//保证每个节点都符合堆的性质
+            adjustHeap(array,i,array.length);
+        }
+        for(int i=1;i<array.length;i++){//将堆顶的元素和数组的最后一个元素交换,然后重新调整堆
+            sortUtil.swap(array,0,array.length-i);
+            adjustHeap(array,i,array.length-i);
+        }
+    }
+    public static void selectSort(int[] array){
+        for(int i=0;i<array.length-1;i++){
+            int minIndex=i;
+            for(int j=i+1;j<array.length;j++){
+                if (array[minIndex]>array[j]){
+                    minIndex=j;
+                }
+            }
+            sortUtil.swap(array,i,minIndex);
+        }
+    }
+    public static void insertSort(int[] array){
+        for(int i=1;i<array.length;i++){
+            int j=i-1;
+            while (j>=0&&array[j]<array[i]){
+                array[j+1]=array[j];
+                j--;
+            }
+            array[j+1]=array[i];
+        }
+    }
+    public static void shellSort(int[] array){
+        for (int gap=array.length/2;gap>0;gap=gap/2){
+
+        }
+    }
+    public static void insertSortSingle(int[] array,int d,int index){
+        int j=index-d;
+        int insertValue=array[index];
+        while (j>=0&&array[j]<array[index]){
+            array[index]=array[j];
+            j-=d;
+        }
+        array[j+d]=insertValue;
+    }
 }
