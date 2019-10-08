@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public abstract class abstractSort {
-    private int sortCount=1000;
-    private int arrayLen=100;
+    private int sortCount=10000;
+    private int arrayLen=1000;
     protected List<String> disOrderList=new ArrayList();
     protected List<String> sequenceList=new ArrayList();
     protected List<String> reserveList=new ArrayList();
@@ -20,7 +20,8 @@ public abstract class abstractSort {
     }
     protected abstract void sort(int[] array);
     public void execute(){
-        long start=System.currentTimeMillis();
+        long start=System.nanoTime();
+        long mstart=System.currentTimeMillis();
         int sequenceOrder=0,reserveOrder=0,disOrder=0,sortCount=this.sortCount,arrayLen=this.arrayLen;
         for(int i=0;i<sortCount;i++) {
             int[] array = sortUtil.produceArray(arrayLen);
@@ -37,8 +38,9 @@ public abstract class abstractSort {
                 reserveList.add(Arrays.toString(array));
             }
         }
-        long end=System.currentTimeMillis();
+        long end=System.nanoTime();
+        long mend=System.currentTimeMillis();
         System.out.printf("array len: %s --  total count: %s --  sequence order: %s --  reserve order: %s  --  disorder: %s  \r\n",arrayLen,sortCount,sequenceOrder,reserveOrder,disOrder);
-        System.out.printf("cost time: %s  \r\n",(end-start));
+        System.out.printf("cost time: %s million  %s  nano \r\n",(end-start),(mend-mstart));
     }
 }

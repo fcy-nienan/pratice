@@ -7,8 +7,6 @@ import java.util.Random;
 public class bubbleSort extends abstractSort{
     public static void main(String args[]) {
         new bubbleSort()
-                .sortCount(10000)
-                .arrayLen(1000)
                 .execute();
     }
 

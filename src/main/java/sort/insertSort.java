@@ -8,8 +8,6 @@ import util.ListUtil;
 public class insertSort extends abstractSort{
     public static void main(String args[]) {
         insertSort insertSort=new insertSort();
-        insertSort.arrayLen(1000);
-        insertSort.sortCount(1000);
         insertSort.execute();
         ListUtil.disListLen(insertSort.disOrderList,5);
     }
