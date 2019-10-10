@@ -92,7 +92,7 @@ public class FcyPriorityQueue {
             }
         }
         System.out.println();
-        queue.display();
+//        queue.display();
 
     }
 }

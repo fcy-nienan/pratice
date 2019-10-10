@@ -10,6 +10,7 @@ public abstract class abstractSort {
     protected List<String> disOrderList=new ArrayList();
     protected List<String> sequenceList=new ArrayList();
     protected List<String> reserveList=new ArrayList();
+    protected List<int[]> sortedList=new ArrayList<>();
     public abstractSort sortCount(int sortCount){
         this.sortCount=sortCount;
         return this;
@@ -29,6 +30,11 @@ public abstract class abstractSort {
         for(int i=0;i<sortCount;i++) {
             int[] array = sortUtil.produceArray(arrayLen);
             sort(array);
+            sortedList.add(array);
+        }
+        long end=System.nanoTime();
+        long mend=System.currentTimeMillis();
+        for(int[] array:sortedList) {
             int orderType = sortUtil.checkArray2(array);
             if (orderType == 0) {
                 disOrder++;
@@ -41,9 +47,7 @@ public abstract class abstractSort {
                 reserveList.add(Arrays.toString(array));
             }
         }
-        long end=System.nanoTime();
-        long mend=System.currentTimeMillis();
         System.out.printf("array len: %s --  total count: %s --  sequence order: %s --  reserve order: %s  --  disorder: %s  \r\n",arrayLen,sortCount,sequenceOrder,reserveOrder,disOrder);
-        System.out.printf("cost time: %s million  %s  nano \r\n",(end-start),(mend-mstart));
+        System.out.printf("cost time: %s nano  %s  million \r\n",(end-start),(mend-mstart));
     }
 }
