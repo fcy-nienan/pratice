@@ -11,5 +11,4 @@ public class Node {
     private Object value;
     private Node left;
     private Node right;
-
 }
