@@ -119,6 +119,9 @@ public class bubbleSort extends abstractSort{
             adjustHeap(array,i,array.length);
         }
 
+
+
+
         for(int i=1;i<array.length;i++){
             int max=array.length-i;
             sortUtil.swap(array,0,max);//此时堆顶的元素是最大或者最小,将其放在数组的最后-i位
