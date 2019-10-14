@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.logging.Logger;
 
 public class HeapTwo {
+    private Logger logger=Logger.getLogger(getClass().getName());
     private Comparator comparator;
     private Object[] objects;
     private int size;
