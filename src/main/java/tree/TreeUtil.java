@@ -5,6 +5,9 @@ import java.util.Queue;
 import java.util.logging.Logger;
 
 public class TreeUtil {
+    public static void main(String[] args) {
+
+    }
     public static void preOrder(TreeNode root){
         if (root!=null){
             System.out.print(root.getVal()+"\t");
