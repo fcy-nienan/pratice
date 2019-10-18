@@ -22,7 +22,7 @@ public class outerSort extends abstractSort{
             outputStream.write(x);
             if (i%flush_threold==0){
                 outputStream.flush();
-                fileOutputStream.getFD().sync();
+//                fileOutputStream.getFD().sync();
                 System.out.println(fileOutputStream.getFD().valid());
                 System.out.println("add count:"+flush_threold);
             }
