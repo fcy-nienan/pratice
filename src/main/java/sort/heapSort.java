@@ -10,14 +10,15 @@ public class heapSort extends abstractSort{
 
     @Override
     protected void sort(int[] array) {
-        for(int i=array.length/2-1;i>=0;i--){
+        selectSort(array);
+    }
+    private static void heapSort1(int[] array){
+        for (int i=array.length/2-1;i>=0;i--){
             adjustHeap(array,i,array.length);
         }
         for (int i=1;i<array.length;i++){
-            int tmp=array[0];
-            array[0]=array[array.length-i];
-            array[array.length-i]=tmp;
-            adjustHeap(array,0,array.length-i);
+            sortUtil.swap(array,0,array.length-i);
+            adjustHeap(array,0,array.length);
         }
     }
     public static void adjustHeap(int[] array,int current,int len){
