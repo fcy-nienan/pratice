@@ -53,7 +53,7 @@ public class heapSort extends abstractSort{
                     minIndex=j;
                 }
             }
-            array[i]=array[minIndex];
+            sortUtil.swap(array,minIndex,i);
         }
     }
     public static void insertSort(int[] array){
