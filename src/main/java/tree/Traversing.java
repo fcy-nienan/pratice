@@ -10,6 +10,24 @@ import java.util.logging.Logger;
 public class Traversing {
     private static Logger logger = Logger.getLogger(Traversing.class.getName());
 
+    public static List<Integer> preOrderStack1(TreeNode root){
+        List<Integer> list=new ArrayList<>();
+
+        return list;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    前序遍历
     public static List<Integer> preOrderStack(TreeNode root){
         List<Integer> list=new ArrayList<>();
