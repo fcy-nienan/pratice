@@ -9,8 +9,6 @@ public class bubbleSort extends abstractSort{
         new bubbleSort()
                 .execute();
     }
-
-    @Override
     protected void sort(int[] array) {
         heapSort(array);
     }
