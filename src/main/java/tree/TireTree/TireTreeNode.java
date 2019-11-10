@@ -1,12 +1,33 @@
 package tree.TireTree;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.util.List;
+import java.util.Set;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class TireTreeNode {
-    private int data;
-    private List<TireTreeNode> children;
+    private char value;
+    private Set<TireTreeNode> children;
     private boolean end;
-    public static void main (String args[]) {
-
+    public TireTreeNode(char c){
+        this.value=c;
+    }
+    public int hashCode(){
+        return Integer.hashCode(value);
+    }
+    public boolean equals(Object o){
+        if (o instanceof TireTree){
+            if (o.hashCode()==hashCode()){
+                return true;
+            }
+        }
+        return false;
     }
 }
