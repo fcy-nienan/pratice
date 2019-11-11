@@ -7,7 +7,6 @@ public class AVLTree {
             if (root.getLeft()==null&&root.getRight()==null){
                 return 1;
             }
-
             int left=getHeight(root.getLeft());
             int right=getHeight(root.getRight());
             return Math.max(left,right);
@@ -89,22 +88,19 @@ public class AVLTree {
         }else {
             node.setLeft(insert(value,node.getLeft()));
         }
-        int lh=getHeight(node.getLeft());
-        int rh=getHeight(node.getRight());
-        int balance=Math.abs(lh-rh);
-        if (balance>1) {
-            if (value > node.getValue()) {
+        if (value > node.getValue()) {
+            if (getHeight(node.getLeft())-getHeight(node.getRight())>1) {
                 if (value < node.getRight().getValue()) {
                     node = RL(node);
                 } else {
                     node = LL(node);
                 }
+            }
+        } else {
+            if (value > node.getLeft().getValue()) {
+                node = LR(node);
             } else {
-                if (value > node.getLeft().getValue()) {
-                    node = LR(node);
-                } else {
-                    node = RR(node);
-                }
+                node = RR(node);
             }
         }
         node.setHeight(Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1);
