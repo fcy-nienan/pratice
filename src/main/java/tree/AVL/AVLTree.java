@@ -21,6 +21,7 @@ public class AVLTree {
 
     }
     public AVLNode LL(AVLNode node){
+        System.out.println("LL");
         AVLNode tmp=node.getRight();
         tmp.setRight(tmp.getLeft());
         tmp.setLeft(tmp);
@@ -29,6 +30,7 @@ public class AVLTree {
         return tmp;
     }
     public AVLNode RR(AVLNode node){
+        System.out.println("RR");
         AVLNode tmp=node.getLeft();
         node.setLeft(tmp.getRight());
         tmp.setRight(node);
@@ -89,7 +91,7 @@ public class AVLTree {
             node.setLeft(insert(value,node.getLeft()));
         }
         if (value > node.getValue()) {
-            if (getHeight(node.getLeft())-getHeight(node.getRight())>1) {
+            if (getHeight(node.getRight())-getHeight(node.getLeft())>1) {
                 if (value < node.getRight().getValue()) {
                     node = RL(node);
                 } else {
@@ -97,10 +99,12 @@ public class AVLTree {
                 }
             }
         } else {
-            if (value > node.getLeft().getValue()) {
-                node = LR(node);
-            } else {
-                node = RR(node);
+            if (getHeight(node.getLeft())-getHeight(node.getRight())>1) {
+                if (value > node.getLeft().getValue()) {
+                    node = LR(node);
+                } else {
+                    node = RR(node);
+                }
             }
         }
         node.setHeight(Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1);
