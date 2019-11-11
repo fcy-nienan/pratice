@@ -76,38 +76,38 @@ public class AVLTree {
     public void insert(int value){
         root=insert(value,root);
     }
-    private AVLNode insert(int value,AVLNode current){
-        if (current==null){
-            current=new AVLNode(value);
-            return current;
-        }
-        AVLNode node=current;
-        if (value==node.getValue()){
+    private AVLNode insert(int value,AVLNode node){
+        if (node==null){
+            node=new AVLNode(value);
+            node.setHeight(1);
             return node;
         }
         if (value>node.getValue()){
             node.setRight(insert(value,node.getRight()));
-        }else {
-            node.setLeft(insert(value,node.getLeft()));
-        }
-        if (value > node.getValue()) {
-            if (getHeight(node.getRight())-getHeight(node.getLeft())>1) {
+            int balance=Math.abs(getHeight(node.getRight())-getHeight(node.getLeft()));
+            if (balance>1) {
                 if (value < node.getRight().getValue()) {
                     node = RL(node);
                 } else {
                     node = LL(node);
                 }
             }
-        } else {
-            if (getHeight(node.getLeft())-getHeight(node.getRight())>1) {
+        }else if (value<node.getValue()){
+            node.setLeft(insert(value,node.getLeft()));
+            int balance=Math.abs(getHeight(node.getRight())-getHeight(node.getLeft()));
+            if (balance>1) {
                 if (value > node.getLeft().getValue()) {
                     node = LR(node);
                 } else {
                     node = RR(node);
                 }
             }
+        }else{
+            return node;
         }
-        node.setHeight(Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1);
+        int h=Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1;
+        System.out.println(value+"height:"+h);
+        node.setHeight(h);
         return node;
     }
     public String toString(){
