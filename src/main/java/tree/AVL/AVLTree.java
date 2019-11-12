@@ -9,7 +9,7 @@ public class AVLTree {
             }
             int left=getHeight(root.getLeft());
             int right=getHeight(root.getRight());
-            return Math.max(left,right);
+            return Math.max(left,right)+1;
         }else{
             return 0;
         }
@@ -84,7 +84,10 @@ public class AVLTree {
         }
         if (value>node.getValue()){
             node.setRight(insert(value,node.getRight()));
-            int balance=Math.abs(getHeight(node.getRight())-getHeight(node.getLeft()));
+            int lh=getHeight(node.getLeft());
+            int rh=getHeight(node.getRight());
+            int balance=Math.abs(lh-rh);
+            System.out.println(balance);
             if (balance>1) {
                 if (value < node.getRight().getValue()) {
                     node = RL(node);
@@ -94,7 +97,10 @@ public class AVLTree {
             }
         }else if (value<node.getValue()){
             node.setLeft(insert(value,node.getLeft()));
-            int balance=Math.abs(getHeight(node.getRight())-getHeight(node.getLeft()));
+            int lh=getHeight(node.getLeft());
+            int rh=getHeight(node.getRight());
+            int balance=Math.abs(lh-rh);
+            System.out.println(balance);
             if (balance>1) {
                 if (value > node.getLeft().getValue()) {
                     node = LR(node);
@@ -105,9 +111,12 @@ public class AVLTree {
         }else{
             return node;
         }
-        int h=Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1;
-        System.out.println(value+"height:"+h);
-        node.setHeight(h);
+        int h=(node.getLeft()==null?0:node.getLeft().getHeight())+(node.getRight()==null?0:node.getRight().getHeight());
+        node.setHeight(h+1);
+        System.out.println(node);
+//        int h=Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1;
+//        System.out.println(value+"height:"+h);
+//        node.setHeight(h);
         return node;
     }
     public String toString(){
