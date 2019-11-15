@@ -159,7 +159,8 @@ public class AVLTree {
 		*/
         System.out.println("Preorder traversal" +
                 " of constructed tree is : ");
-        tree.preOrder(tree.root);
+//        tree.preOrder(tree.root);
+        System.out.println(tree.root);
     }
 }
 // This code has been contributed by Mayank Jaiswal

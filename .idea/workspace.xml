@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/V1/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V1/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V1/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V1/AVLTree.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +153,7 @@
       <updated>1571733898001</updated>
       <workItem from="1571733901609" duration="4947000" />
       <workItem from="1572882358787" duration="598000" />
-      <workItem from="1573055799772" duration="21987000" />
+      <workItem from="1573055799772" duration="22837000" />
     </task>
     <servers />
   </component>
