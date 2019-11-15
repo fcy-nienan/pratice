@@ -9,7 +9,7 @@ public class AVLTree {
             }
             int left=getHeight(root.getLeft());
             int right=getHeight(root.getRight());
-            return Math.max(left,right)+1;
+            return Math.max(left,right);
         }else{
             return 0;
         }
@@ -76,18 +76,77 @@ public class AVLTree {
     public void insert(int value){
         root=insert(value,root);
     }
+    public void insert1(int value){
+        root=insert(root,value);
+    }
+    int height(AVLNode N)
+    {
+        if (N == null)
+            return 0;
+        return N.getHeight();
+    }
+    int getBalance(AVLNode N)
+    {
+        if (N == null)
+            return 0;
+        return height(N.getLeft())-height(N.getRight());
+    }
+    public AVLNode insert(AVLNode node, int key)
+    {
+        /* 1. Perform the normal BST insertion */
+        if (node == null) {
+            AVLNode avlNode = new AVLNode(key);
+            avlNode.setHeight(1);
+            return avlNode;
+        }
+        if (key < node.getValue())
+            node.setLeft(insert(node.getLeft(),key));
+        else if (key > node.getValue())
+            node.setRight(insert(node.getRight(),key));
+        else // Equal keys are not allowed in BST
+            return node;
+
+        /* 2. Update height of this ancestor node */
+        node.setHeight(1+Math.max(height(node.getLeft()),height(node.getRight())));
+    /* 3. Get the balance factor of this ancestor
+        node to check whether this node became
+        unbalanced */
+        int balance = getBalance(node);
+
+        // If this node becomes unbalanced, then
+        // there are 4 cases
+
+        // Left Left Case
+        if (balance>1&&key<node.getLeft().getValue())
+            return RR(node);
+
+        // Right Right Case
+        if (balance < -1 && key > node.getRight().getValue())
+            return LR(node);
+
+        // Left Right Case
+        if (balance > 1 && key > node.getLeft().getValue())
+        {
+            return LR(node);
+        }
+
+        // Right Left Case
+        if (balance < -1 && key < node.getRight().getValue())
+        {
+            return RL(node);
+        }
+
+        /* return the (unchanged) node pointer */
+        return node;
+    }
     private AVLNode insert(int value,AVLNode node){
         if (node==null){
             node=new AVLNode(value);
-            node.setHeight(1);
             return node;
         }
         if (value>node.getValue()){
             node.setRight(insert(value,node.getRight()));
-            int lh=getHeight(node.getLeft());
-            int rh=getHeight(node.getRight());
-            int balance=Math.abs(lh-rh);
-            System.out.println(balance);
+            int balance=Math.abs(getHeight(node.getRight())-getHeight(node.getLeft()));
             if (balance>1) {
                 if (value < node.getRight().getValue()) {
                     node = RL(node);
@@ -97,10 +156,7 @@ public class AVLTree {
             }
         }else if (value<node.getValue()){
             node.setLeft(insert(value,node.getLeft()));
-            int lh=getHeight(node.getLeft());
-            int rh=getHeight(node.getRight());
-            int balance=Math.abs(lh-rh);
-            System.out.println(balance);
+            int balance=Math.abs(getHeight(node.getRight())-getHeight(node.getLeft()));
             if (balance>1) {
                 if (value > node.getLeft().getValue()) {
                     node = LR(node);
@@ -111,12 +167,9 @@ public class AVLTree {
         }else{
             return node;
         }
-        int h=(node.getLeft()==null?0:node.getLeft().getHeight())+(node.getRight()==null?0:node.getRight().getHeight());
-        node.setHeight(h+1);
-        System.out.println(node);
-//        int h=Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1;
-//        System.out.println(value+"height:"+h);
-//        node.setHeight(h);
+        int h=Math.max(getHeight(node.getLeft()),getHeight(node.getRight()))+1;
+        System.out.println("height:"+h);
+        node.setHeight(h);
         return node;
     }
     public String toString(){
