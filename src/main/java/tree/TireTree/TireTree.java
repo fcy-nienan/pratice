@@ -1,11 +1,11 @@
 package tree.TireTree;
 
-import java.util.ArrayList;
-import java.util.List;
+import tree.TireTreeNode;
+
 import java.util.Set;
 
 public class TireTree {
-    public boolean exists(String s,TireTreeNode root){
+    public boolean exists(String s, TireTreeNode root){
         char[] val=s.toCharArray();
         TireTreeNode current=root;
         int i=0;

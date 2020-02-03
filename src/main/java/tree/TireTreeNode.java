@@ -1,11 +1,11 @@
-package tree.TireTree;
+package tree;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import tree.TireTree.TireTree;
 
-import java.util.List;
 import java.util.Set;
 
 @Data

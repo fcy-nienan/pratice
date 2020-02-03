@@ -1,19 +1,16 @@
-package tree;
+package tree.Util;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Stack;
-import java.util.logging.Logger;
+import tree.Node;
+
 //二叉搜索树的迭代器
 public class BSTIterator {
-    TreeNode root;
-    public BSTIterator(TreeNode root) {
+    Node root;
+    public BSTIterator(Node root) {
         this.root=root;
     }
     public int next(){
-        TreeNode prev=null;
-        TreeNode t=root;
+        Node prev=null;
+        Node t=root;
         while(t!=null){
             // 到达最小节点
             while (t.left!=null){
@@ -24,7 +21,7 @@ public class BSTIterator {
             if (prev!=null){
                 prev.left=null;
 //            将root节点挂在到当前节点的最右边
-                TreeNode tmp=t;
+                Node tmp=t;
                 while (tmp.right!=null) {
                     tmp = tmp.right;
                 }
@@ -34,7 +31,7 @@ public class BSTIterator {
 //            如果父节点没有值就不需要挂在
                 root=root.right;
             }
-            return t.val;
+            return t.value;
         }
         return -1;
     }
@@ -43,7 +40,7 @@ public class BSTIterator {
     }
 
     public static void main(String[] args) {
-        TreeNode root=TreeUtil.create(new int[]{3,1,4,-1,2});
+        Node root=TreeUtil.create(new int[]{3,1,4,-1,2});
         BSTIterator iterator=new BSTIterator(root);
         System.out.println(iterator.next());
         System.out.println(iterator.next());

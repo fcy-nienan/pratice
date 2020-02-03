@@ -4,28 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import tree.AVLNode;
 
-// Java program for insertion in AVL Tree
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-class Node {
-    int key, height;
-    Node left, right;
-
-    Node(int d) {
-        key = d;
-        height = 1;
-    }
-}
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
 
 public class AVLTree {
 
-    Node root;
+    AVLNode root;
 
     // A utility function to get the height of the tree
-    int height(Node N) {
+    int height(AVLNode N) {
         if (N == null)
             return 0;
 
@@ -39,14 +29,16 @@ public class AVLTree {
 
     // A utility function to right rotate subtree rooted with y
     // See the diagram given above.
-    Node rightRotate(Node y) {
-        Node x = y.left;
-        Node T2 = x.right;
+//    以y为root节点的二叉树
+//    右旋转y节点,使得y的左节点成为一个当前的根结点,当前的二叉树保持平衡
+    AVLNode rightRotate(AVLNode y) {
+        AVLNode x = y.left;
+        AVLNode T2 = x.right;
 
         // Perform rotation
         x.right = y;
         y.left = T2;
-
+//      更新两个节点的高度,毫无疑问,只有这两个节点的高度变化了的
         // Update heights
         y.height = max(height(y.left), height(y.right)) + 1;
         x.height = max(height(x.left), height(x.right)) + 1;
@@ -57,9 +49,11 @@ public class AVLTree {
 
     // A utility function to left rotate subtree rooted with x
     // See the diagram given above.
-    Node leftRotate(Node x) {
-        Node y = x.right;
-        Node T2 = y.left;
+//    左旋
+//    正常的旋转节点并且更新两个节点的高度
+    AVLNode leftRotate(AVLNode x) {
+        AVLNode y = x.right;
+        AVLNode T2 = y.left;
 
         // Perform rotation
         y.left = x;
@@ -73,69 +67,86 @@ public class AVLTree {
         return y;
     }
 
-    // Get Balance factor of node N
-    int getBalance(Node N) {
+    // Get Balance factor of AVLNode N
+    int getBalance(AVLNode N) {
         if (N == null)
             return 0;
 
         return height(N.left) - height(N.right);
     }
+//    为啥没有LR旋转和RL旋转？
 
-    Node insert(Node node, int key) {
+    AVLNode insert(AVLNode AVLNode, int value) {
 
         /* 1. Perform the normal BST insertion */
-        if (node == null)
-            return (new Node(key));
+        if (AVLNode == null)
+            return (new AVLNode(value));
 
-        if (key < node.key)
-            node.left = insert(node.left, key);
-        else if (key > node.key)
-            node.right = insert(node.right, key);
-        else // Duplicate keys not allowed
-            return node;
+        if (value < AVLNode.value)
+            AVLNode.left = insert(AVLNode.left, value);
+        else if (value > AVLNode.value)
+            AVLNode.right = insert(AVLNode.right, value);
+        else {// Duplicate values not allowed
+            System.out.println("duplicate values !");
+            return AVLNode;
+        }
 
-        /* 2. Update height of this ancestor node */
-        node.height = 1 + max(height(node.left),
-                height(node.right));
+        /* 2. Update height of this ancestor AVLNode */
+        AVLNode.height = 1 + max(height(AVLNode.left),
+                height(AVLNode.right));
 
 		/* 3. Get the balance factor of this ancestor
-			node to check whether this node became
+			AVLNode to check whether this AVLNode became
 			unbalanced */
-        int balance = getBalance(node);
+        int balance = getBalance(AVLNode);
 
-        // If this node becomes unbalanced, then there
+        // If this AVLNode becomes unbalanced, then there
         // are 4 cases Left Left Case
-        if (balance > 1 && key < node.left.key)
-            return rightRotate(node);
+//        当插入的节点大于需要旋转的左节点并且
+//        当前节点的左节点高度-右节点高度>1
+//        只需要右旋
+        if (balance > 1 && value < AVLNode.left.value)
+            return rightRotate(AVLNode);
 
-        // Right Right Case
-        if (balance < -1 && key > node.right.key)
-            return leftRotate(node);
+//        getHeight(left)-getHeight(right)<-1
+//        value>AVLNode.left.value
+        if (balance < -1 && value > AVLNode.right.value)
+            return leftRotate(AVLNode);
 
         // Left Right Case
-        if (balance > 1 && key > node.left.key) {
-            node.left = leftRotate(node.left);
-            return rightRotate(node);
+//        getHeight(left)-getHeight(right)>1
+//        value>AVLNode.left.value
+        if (balance > 1 && value > AVLNode.left.value) {
+            AVLNode.left = leftRotate(AVLNode.left);
+            return rightRotate(AVLNode);
         }
 
         // Right Left Case
-        if (balance < -1 && key < node.right.key) {
-            node.right = rightRotate(node.right);
-            return leftRotate(node);
+        if (balance < -1 && value < AVLNode.right.value) {
+            AVLNode.right = rightRotate(AVLNode.right);
+            return leftRotate(AVLNode);
         }
 
-        /* return the (unchanged) node pointer */
-        return node;
+        /* return the (unchanged) AVLNode pointer */
+        return AVLNode;
     }
 
     // A utility function to print preorder traversal
     // of the tree.
-    // The function also prints height of every node
-    void preOrder(Node node) {
-        if (node != null) {
-            System.out.print(node.key + " ");
-            preOrder(node.left);
-            preOrder(node.right);
+    // The function also prints height of every AVLNode
+    void preOrder(AVLNode AVLNode) {
+        if (AVLNode != null) {
+            System.out.print(AVLNode.value + " ");
+            preOrder(AVLNode.left);
+            preOrder(AVLNode.right);
+        }
+    }
+    private static int size=0;
+    void inOrder(AVLNode AVLNode){
+        if (AVLNode!=null){
+            inOrder(AVLNode.left);
+            System.out.println(AVLNode.value+":"+(size++));
+            inOrder(AVLNode.right);
         }
     }
 
@@ -143,24 +154,22 @@ public class AVLTree {
         AVLTree tree = new AVLTree();
 
         /* Constructing tree given in the above figure */
-        tree.root = tree.insert(tree.root, 10);
-        tree.root = tree.insert(tree.root, 20);
-        tree.root = tree.insert(tree.root, 30);
-        tree.root = tree.insert(tree.root, 40);
-        tree.root = tree.insert(tree.root, 50);
-        tree.root = tree.insert(tree.root, 25);
-
-		/* The constructed AVL Tree would be
-			30
-			/ \
-		20 40
-		/ \	 \
-		10 25 50
-		*/
+        Random random=new Random();
+        Set<Integer> set=new HashSet<>();
+        int value=-1;
+        for (int i=0;i<100;i++){
+            do {
+                value=random.nextInt(100);
+            }while (set.contains(value));
+            set.add(value);
+            tree.root=tree.insert(tree.root,value);
+        }
         System.out.println("Preorder traversal" +
                 " of constructed tree is : ");
-//        tree.preOrder(tree.root);
-        System.out.println(tree.root);
+        tree.inOrder(tree.root);
+        System.out.println(tree.root.value);
+        System.out.println(tree.height(tree.root.left));
+        System.out.println(tree.height(tree.root.right));
     }
 }
 // This code has been contributed by Mayank Jaiswal

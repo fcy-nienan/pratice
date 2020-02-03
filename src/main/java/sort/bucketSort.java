@@ -15,6 +15,8 @@ public class bucketSort extends abstractSort {
     }
     public static void bucketSort(int[] array,int max){
         int[] data=new int[max];
+//        [1,1,2,1,1,1,1,1,3]
+//        代表:0,1,(2,2),3,4,5,6,7,(8,8,8)
         for(int i=0;i<array.length;i++){
             data[array[i]]++;
         }

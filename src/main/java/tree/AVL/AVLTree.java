@@ -1,5 +1,7 @@
 package tree.AVL;
 
+import tree.AVLNode;
+
 public class AVLTree {
     private AVLNode root;
     public int getHeight(AVLNode root){
@@ -20,6 +22,8 @@ public class AVLTree {
     public void delete(AVLNode node){
 
     }
+//    左旋
+
     public AVLNode LL(AVLNode node){
         System.out.println("LL");
         AVLNode tmp=node.getRight();

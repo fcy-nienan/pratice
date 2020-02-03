@@ -1,41 +1,20 @@
-package tree;
+package tree.Util;
 
-import link.ListNode;
+import tree.Node;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-import java.util.logging.Logger;
 
 public class Traversing {
-    private static Logger logger = Logger.getLogger(Traversing.class.getName());
-
-    public static List<Integer> preOrderStack1(TreeNode root){
-        List<Integer> list=new ArrayList<>();
-
-        return list;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
 //    前序遍历
-    public static List<Integer> preOrderStack(TreeNode root){
+    public static List<Integer> preOrderStack(Node root){
         List<Integer> list=new ArrayList<>();
-        Stack<TreeNode> stack=new Stack<>();
+        Stack<Node> stack=new Stack<>();
         stack.push(root);
         while (!stack.empty()){
-            TreeNode node=stack.pop();
-            list.add(node.val);
+            Node node=stack.pop();
+            list.add(node.value);
             if (node.right!=null){
                 stack.push(node.right);
             }
@@ -45,17 +24,17 @@ public class Traversing {
         }
         return list;
     }
-    public static List<Integer> inOrderStackII(TreeNode root){
+    public static List<Integer> inOrderStackII(Node root){
         List<Integer> list=new ArrayList<>();
-        Stack<TreeNode> stack=new Stack<>();
-        TreeNode node=root;
+        Stack<Node> stack=new Stack<>();
+        Node node=root;
         while (node!=null||!stack.empty()){
             if (node!=null){
                 stack.push(node);
                 node=node.left;
             }else{
-                TreeNode n=stack.pop();
-                list.add(n.val);
+                Node n=stack.pop();
+                list.add(n.value);
                 node=node.right;
             }
 
@@ -63,17 +42,17 @@ public class Traversing {
         return list;
     }
 //    中序遍历
-    public static List<Integer> inOrderStack(TreeNode root){
+    public static List<Integer> inOrderStack(Node root){
         List<Integer> list=new ArrayList<>();
         if (root==null)return list;
-        Stack<TreeNode> stack=new Stack<>();
-        TreeNode node=root;
+        Stack<Node> stack=new Stack<>();
+        Node node=root;
         while (node!=null){
             stack.push(node);
         }
         while (!stack.empty()){
-            TreeNode n=stack.pop();
-            System.out.println(n.val);
+            Node n=stack.pop();
+            System.out.println(n.value);
             n=n.right;
             while (n!=null){
                 stack.push(n);
@@ -94,10 +73,10 @@ public class Traversing {
     *
     *
     * */
-    public static List<Integer> postOrderStack(TreeNode root){
+    public static List<Integer> postOrderStack(Node root){
         List<Integer> list=new ArrayList<>();
-        Stack<TreeNode> stack=new Stack<>();
-        TreeNode node=root,prev=null;
+        Stack<Node> stack=new Stack<>();
+        Node node=root,prev=null;
         while (null!=node||!stack.empty()){
             if (node!=null){
                 stack.push(node);
