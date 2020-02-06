@@ -118,7 +118,7 @@ public class Sort extends abstractSort{
     public static void heapSort(int[] array){
         for (int i=array.length/2-1;i>=0;i--){
             for (int j=i*2+1;j<array.length;j=j*2+1){
-                if (j+1<array.length&&)
+//                if (j+1<array.length&&)
             }
         }
         for (int i=1;i<array.length-1;i++){

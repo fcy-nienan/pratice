@@ -2,57 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pratice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V2/AVLV2Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V3/AVLV3Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V4/AVLV4Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V5/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V6/AVLV6Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V7/TreeTraversing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V8/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVLNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/80771.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/bucketSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/bucketSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/heapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/heapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stack/inorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stack/inorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stack/zigzagOrderLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stack/zigzagOrderLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V2/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V2/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/AVLTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/V1/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V1/AVLTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BAddTree/BAddTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V2/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BSTIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/Util/BSTIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BTree/BTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V1/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/TireTree/TireTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/TireTree/TireTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/TireTree/TireTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/TireTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/Traversing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/Util/Traversing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/Tree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/TreeNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/TreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/Util/TreeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pratice.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/pratice.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/heapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/heapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stack/inorderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/inorderTraversal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stack/zigzagOrderLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/zigzagOrderLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/AVLDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/AVLNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/AVLTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V1/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V1/AVLTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V1/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/BAddTree/BAddTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/BSTIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/BTree/BTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/TireTree/TireTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/TireTree/TireTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/TireTree/TireTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/Traversing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/TreeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/AVL/V8/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V8/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pratice.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +23,7 @@
         <option value="Class" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -95,20 +51,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="E:/../CodeTool/NetWork/Git/bin/git.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sort (1)">
+  <component name="RunManager" selected="Application.AVLTree">
     <configuration name="AVLTree (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.AVL.V5.AVLTree" />
       <module name="pratice" />
@@ -176,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sort (1)" />
         <item itemvalue="Application.AVLTree" />
+        <item itemvalue="Application.Sort (1)" />
         <item itemvalue="Application.AVLV6Tree" />
         <item itemvalue="Application.AVLTree (1)" />
         <item itemvalue="Application.Sort" />
@@ -213,7 +171,21 @@
       <workItem from="1579828612761" duration="11180000" />
       <workItem from="1579962610474" duration="40380000" />
       <workItem from="1580196837507" duration="43787000" />
+      <workItem from="1580733884330" duration="127000" />
+      <workItem from="1580826701266" duration="38112000" />
+      <workItem from="1580872528678" duration="2876000" />
+      <workItem from="1580875436449" duration="365000" />
+      <workItem from="1580875825397" duration="3187000" />
+      <workItem from="1580888947747" duration="1051000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1580733936321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580733936321</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +218,15 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Big_Data_Tools_Connections" timestamp="1580873289380">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Big_Data_Tools_Connections/0.0.1536.824@0.0.1536.824" timestamp="1580873289380" />
     <state x="520" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1580448280976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -291,26 +271,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="95" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580629342172" />
-    <state x="270" y="54" key="SettingsEditor" timestamp="1580282580787">
+    <state x="229" y="57" key="SettingsEditor" timestamp="1580877784514">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580282580787" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1580015056085">
+    <state x="229" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580877784514" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1580876090117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1580015056085" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1580876090117" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580733966799">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580733966799" />
     <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1580227578163">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1580227578163" />
+    <state x="377" y="0" width="782" height="824" key="find.popup" timestamp="1580876333436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="377" y="0" width="782" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1580876333436" />
+    <state x="496" y="202" key="git4idea.merge.GitPullDialog" timestamp="1580733960652">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="202" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1580733960652" />
     <state x="443" y="258" width="713" height="413" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1580282579754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="443" y="258" width="713" height="413" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1580282579754" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580175992943">
+    <state x="470" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1580877247556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580175992943" />
+    <state x="470" y="30" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1580877247556" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580878302241">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580878302241" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
