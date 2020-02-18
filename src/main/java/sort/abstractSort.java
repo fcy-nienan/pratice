@@ -1,8 +1,6 @@
 package sort;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public abstract class abstractSort {
     private int sortCount=1000;
@@ -11,6 +9,8 @@ public abstract class abstractSort {
     protected List<String> sequenceList=new ArrayList();
     protected List<String> reserveList=new ArrayList();
     protected List<int[]> sortedList=new ArrayList<>();
+    protected List<int[]> srcList=new ArrayList<>();
+    protected List<Integer> arrayType=new ArrayList<>();
     public abstractSort sortCount(int sortCount){
         this.sortCount=sortCount;
         return this;
@@ -29,6 +29,7 @@ public abstract class abstractSort {
         int sequenceOrder=0,reserveOrder=0,disOrder=0,sortCount=this.sortCount,arrayLen=this.arrayLen;
         for(int i=0;i<sortCount;i++) {
             int[] array = sortUtil.produceArray(arrayLen);
+            srcList.add(Arrays.copyOf(array,array.length));
             sort(array);
             sortedList.add(array);
         }
@@ -36,6 +37,12 @@ public abstract class abstractSort {
         long mend=System.currentTimeMillis();
         for(int[] array:sortedList) {
             int orderType = sortUtil.checkArray2(array);
+            arrayType.add(orderType);
+        }
+
+        for (int i=0;i<arrayType.size();i++) {
+            int orderType=arrayType.get(i);
+            int[] array=sortedList.get(i);
             if (orderType == 0) {
                 disOrder++;
                 disOrderList.add(Arrays.toString(array));
@@ -47,7 +54,15 @@ public abstract class abstractSort {
                 reserveList.add(Arrays.toString(array));
             }
         }
+
         System.out.printf("array len: %s --  total count: %s --  sequence order: %s --  reserve order: %s  --  disorder: %s  \r\n",arrayLen,sortCount,sequenceOrder,reserveOrder,disOrder);
         System.out.printf("cost time: %s nano  %s  million \r\n",(end-start),(mend-mstart));
+        for (int i = 0; i < arrayType.size(); i++) {
+            if (arrayType.get(i)==0){
+                System.out.println(Arrays.toString(srcList.get(i)));
+                System.out.println(Arrays.toString(sortedList.get(i)));
+                break;
+            }
+        }
     }
 }

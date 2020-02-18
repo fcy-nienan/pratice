@@ -27,9 +27,7 @@ public class heapSort extends abstractSort{
                 i=i+1;
             }
             if (array[i]<array[current]){
-                int tmp=array[current];
-                array[current]=array[i];
-                array[i]=tmp;
+                sortUtil.swap(array,current,i);
                 current=i;
             }else{
                 break;
