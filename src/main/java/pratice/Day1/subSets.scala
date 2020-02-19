@@ -30,7 +30,7 @@ object subSets {
   def quickSort1(x:List[Int]):List[Int]={
     x match {
       case Nil=>Nil
-      case x::xs=>{
+      case x::xs=>{//模式匹配:首元素和剩余的元素
         val (before,after)=xs.partition(_<x)
         quickSort1(before) ::: x::quickSort1(after)
       }

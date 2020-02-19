@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sort/V5/sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V1/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V1/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V2/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V2/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V4/heapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V4/heapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/abstractSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/AbstractSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/bubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/bubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/bucketSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/bucketSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/heapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/heapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/insertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/insertSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/mergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/mergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/outerSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/outerSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/pratice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/pratice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/quickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/selectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/selectSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/shellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/shellSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pratice.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/combine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/divide$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/divide$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/divide.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/divide.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/V1/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V1/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/V2/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V2/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/V3/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V3/quickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/V4/heapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V4/heapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/V4/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V4/quickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/abstractSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/abstractSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/bubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/bubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/heapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/heapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/insertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/insertSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/mergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/mergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/outerSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/outerSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/pratice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/pratice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/quickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/selectSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/selectSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/shellSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/shellSort.class" afterDir="false" />
-    </list>
+    <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+            <state relative-caret-position="328">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="30" />
               <folding>
                 <element signature="e#196#636#0" />
               </folding>
@@ -218,6 +151,11 @@
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1377" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectId" id="1SYI2rhRogdHFkO5WizCRlABQSv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -514,7 +452,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14975000" />
+    <option name="totallyTimeSpent" value="15218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -527,14 +465,14 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3089431" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29593495" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40813008" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.20487805" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18211383" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3284553" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.29268292" />
@@ -986,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        <state relative-caret-position="328">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="30" />
           <folding>
             <element signature="e#196#636#0" />
           </folding>
