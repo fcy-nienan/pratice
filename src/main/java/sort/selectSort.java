@@ -1,7 +1,7 @@
 package sort;
 //选择排序
 //时间复杂度o(n*n) 空间复杂度o(1)  稳定性:是
-public class selectSort extends abstractSort{
+public class selectSort extends AbstractSort {
     public static void main(String args[]) {
         new selectSort().execute();
     }

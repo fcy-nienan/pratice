@@ -1,8 +1,6 @@
 package sort;
 
-import java.util.Arrays;
-
-public class shellSort extends abstractSort{
+public class shellSort extends AbstractSort {
     public static void main(String args[]) {
         new shellSort().execute();
     }

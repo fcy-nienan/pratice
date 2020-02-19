@@ -3,12 +3,10 @@ package sort.V4;/*
  * Date:2020/2/15 17:57
  */
 
-import sort.abstractSort;
+import sort.AbstractSort;
 import sort.sortUtil;
 
-import java.util.PriorityQueue;
-
-public class heapSort extends abstractSort {
+public class heapSort extends AbstractSort {
     public static void main(String[] args) {
         new heapSort().execute();
     }

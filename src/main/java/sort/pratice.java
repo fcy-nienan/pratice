@@ -1,6 +1,6 @@
 package sort;
 
-public class pratice extends abstractSort {
+public class pratice extends AbstractSort {
     public static void main (String args[]) {
         new pratice().execute();
     }

@@ -1,11 +1,10 @@
 package sort.V2;
-import com.sun.scenario.animation.shared.ClipEnvelope;
-import sort.abstractSort;
+import sort.AbstractSort;
 import sort.sortUtil;
 
 import java.util.PriorityQueue;
 
-public class Sort extends abstractSort{
+public class Sort extends AbstractSort {
     @Override
     protected void sort (int[] array) {
         heapSort(array);

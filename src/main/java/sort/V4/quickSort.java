@@ -3,12 +3,10 @@ package sort.V4;/*
  * Date:2020/2/15 16:33
  */
 
-import sort.abstractSort;
+import sort.AbstractSort;
 import sort.sortUtil;
 
-import java.util.Arrays;
-
-public class quickSort extends abstractSort {
+public class quickSort extends AbstractSort {
     public static void main(String[] args) {
         new quickSort().arrayLen(1111).sortCount(2000).execute();
     }

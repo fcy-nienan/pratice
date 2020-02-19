@@ -2,7 +2,7 @@ package sort;
 
 import java.util.*;
 
-public abstract class abstractSort {
+public abstract class AbstractSort {
     private int sortCount=1000;
     private int arrayLen=100;
     protected List<String> disOrderList=new ArrayList();
@@ -11,14 +11,14 @@ public abstract class abstractSort {
     protected List<int[]> sortedList=new ArrayList<>();
     protected List<int[]> srcList=new ArrayList<>();
     protected List<Integer> arrayType=new ArrayList<>();
-    public abstractSort sortCount(int sortCount){
+    public AbstractSort sortCount(int sortCount){
         this.sortCount=sortCount;
         return this;
     }
     public int getArrayLen(){
         return this.arrayLen;
     }
-    public abstractSort arrayLen(int arrayLen){
+    public AbstractSort arrayLen(int arrayLen){
         this.arrayLen=arrayLen;
         return this;
     }

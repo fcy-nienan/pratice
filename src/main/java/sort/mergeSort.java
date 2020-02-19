@@ -1,6 +1,6 @@
 package sort;
 //归并排序
-public class mergeSort extends abstractSort{
+public class mergeSort extends AbstractSort {
     public static void main(String args[]) {
         new mergeSort().execute();
     }

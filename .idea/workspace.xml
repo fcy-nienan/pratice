@@ -2,52 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/AnnotationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Enum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day1/maxDepth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day1/permute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day1/search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day1/spiralOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day1/subSets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day1/uniquePaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day2/isPalindrome.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day2/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day2/searchRange.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day2/threeSumClosest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day3/CombinationSum.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Day3/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/candidatesSum.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/combine.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/minPathSum.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/nextPermutation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/permuteUnique.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/spiralOrder.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/uniquePaths.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day2/ContinueDemo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day2/combinationSum2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day2/divide.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/Day2/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pratice/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sort/V4/heapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/AVL/V9/AVLV9Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/V5/sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/abstractSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/abstractSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V1/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V1/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V2/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V2/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V4/heapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V4/heapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/abstractSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/AbstractSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/bubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/bubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/bucketSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/bucketSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sort/heapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/heapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/sortUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/sortUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/insertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/insertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/mergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/mergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/outerSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/outerSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/pratice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/pratice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/quickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/selectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/selectSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/shellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/shellSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pratice.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/combine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/divide$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/divide$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/divide.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pratice/Day2/divide.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V1/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V1/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V2/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V2/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V3/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V3/quickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V4/heapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V4/heapSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V4/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V4/quickSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sort/abstractSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/abstractSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/bubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/bubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sort/heapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/heapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sort/sortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/sortUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/AVLTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V8/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V8/AVLTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/insertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/insertSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/mergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/mergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/outerSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/outerSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/pratice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/pratice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/quickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/selectSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/selectSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/shellSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/shellSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +76,113 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/nextPermutation.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-229">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/minPathSum.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/combine.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-403">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/candidatesSum.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sort/quickSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sort/V5/sort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="139" column="14" lean-forward="true" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#quickSort#0;class#sort#0" />
+                <element signature="method#heapSort#0;class#sort#0" />
+                <element signature="method#adjustHeap#0;class#sort#0" />
+                <element signature="method#selectSort#0;class#sort#0" />
+                <element signature="method#insertSort1#0;class#sort#0" />
+                <element signature="method#mergeSort#0;class#sort#0" />
+                <element signature="method#merge#0;class#sort#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sort/V4/heapSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-603">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+              <folding>
+                <element signature="e#196#636#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,6 +196,16 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/sort/AbstractSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sort/insertSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sort/V5/sort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -86,6 +223,131 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="Day1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="Day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="V1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="V2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="V3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="V4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pratice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="V5" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -96,8 +358,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Language/scala-2.13.0/lib/scala-source.jar!/" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="last_opened_file_path" value="E:/../Language/scala-2.13.0/lib/scala-source.jar!/" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -111,33 +374,19 @@
       <recent name="leetcode.Day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.combine">
-    <configuration name="AVLV9Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.AVL.V9.AVLV9Tree" />
-      <module name="pratice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.AVL.V9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="combinationSum2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="pratice.Day2.combinationSum2" />
-      <module name="pratice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pratice.Day2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.subSets">
     <configuration name="combine" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="pratice.Day1.combine" />
       <module name="pratice" />
@@ -151,12 +400,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="heapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.V4.heapSort" />
+    <configuration name="insertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.insertSort" />
       <module name="pratice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sort.V4.*" />
+          <option name="PATTERN" value="sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,12 +413,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="quickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.V4.quickSort" />
+    <configuration name="shellSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.shellSort" />
       <module name="pratice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sort.V4.*" />
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.V5.sort" />
+      <module name="pratice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.V5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="subSets" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="pratice.Day1.subSets" />
+      <module name="pratice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pratice.Day1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +454,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.subSets" />
+        <item itemvalue="Application.sort" />
+        <item itemvalue="Application.insertSort" />
+        <item itemvalue="Application.shellSort" />
         <item itemvalue="Application.combine" />
-        <item itemvalue="Application.heapSort" />
-        <item itemvalue="Application.quickSort" />
-        <item itemvalue="Application.AVLV9Tree" />
-        <item itemvalue="Application.combinationSum2" />
       </list>
     </recent_temporary>
   </component>
@@ -238,6 +513,40 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14975000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2775264" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3089431" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40813008" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.20487805" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3284553" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.29268292" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -247,6 +556,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -396,90 +711,289 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tree/AVL/V3/AVLV3Tree.java</url>
           <line>54</line>
+          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tree/AVL/V1/AVLTree.java</url>
           <line>95</line>
+          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tree/AVL/V4/AVLV4Tree.java</url>
           <line>111</line>
+          <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tree/AVL/V5/AVLTree.java</url>
           <line>354</line>
+          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sort/heapSort.java</url>
-          <line>36</line>
+          <line>34</line>
+          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tree/AVL/V7/TreeTraversing.java</url>
           <line>17</line>
+          <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sort/V2/Sort.java</url>
-          <line>123</line>
+          <line>122</line>
+          <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/Day1/spiralOrder.java</url>
           <line>45</line>
+          <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/Day1/permute.java</url>
           <line>38</line>
+          <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java</url>
           <line>19</line>
+          <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java</url>
-          <line>19</line>
+          <line>17</line>
+          <properties />
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sort/V5/sort.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/Day2/isPalindrome.scala</url>
           <line>10</line>
+          <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/Day2/searchRange.scala</url>
           <line>55</line>
+          <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/Day3/CombinationSum.scala</url>
           <line>21</line>
+          <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/java/pratice/Day1/permuteUnique.scala</url>
           <line>27</line>
+          <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/java/pratice/Day1/nextPermutation.scala</url>
           <line>11</line>
+          <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/java/pratice/Day1/nextPermutation.scala</url>
           <line>6</line>
+          <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/heapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/mergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/AbstractSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/insertSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/selectSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/shellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1060">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day2/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day2/combinationSum2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-710">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day2/ContinueDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day2/divide.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/uniquePaths.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/spiralOrder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/permuteUnique.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/nextPermutation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-229">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/minPathSum.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/combine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/candidatesSum.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/quickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/V5/sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="139" column="14" lean-forward="true" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#quickSort#0;class#sort#0" />
+            <element signature="method#heapSort#0;class#sort#0" />
+            <element signature="method#adjustHeap#0;class#sort#0" />
+            <element signature="method#selectSort#0;class#sort#0" />
+            <element signature="method#insertSort1#0;class#sort#0" />
+            <element signature="method#mergeSort#0;class#sort#0" />
+            <element signature="method#merge#0;class#sort#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/V4/quickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/V4/heapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/V3/quickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-603">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding>
+            <element signature="e#196#636#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="ideajad">
     <property name="annotate" value="false" />
@@ -523,5 +1037,82 @@
     <property name="spaceAfterKeyword" value="false" />
     <property name="splitStringsAtNewline" value="false" />
     <property name="useTabs" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>pratice</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.projectlombok:lombok:1.14.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

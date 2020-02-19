@@ -1,9 +1,7 @@
 package sort.V1;
 
-import sort.abstractSort;
+import sort.AbstractSort;
 import sort.sortUtil;
-
-import java.util.Arrays;
 
 /*
 * 每种排序算法的时间复杂度
@@ -11,7 +9,7 @@ import java.util.Arrays;
 * *
 *
 * */
-public class Sort extends abstractSort {
+public class Sort extends AbstractSort {
     public static void main (String args[]) {
         Sort sort=new Sort();
         sort.execute();

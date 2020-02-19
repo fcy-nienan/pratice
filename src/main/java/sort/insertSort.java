@@ -5,7 +5,7 @@ import util.ListUtil;
 //插入排序
 //时间复杂度?空间复杂度?稳定性?
 //时间复杂度o(n*n)  空间复杂度o(1)  稳定性:是
-public class insertSort extends abstractSort{
+public class insertSort extends AbstractSort {
     public static void main(String args[]) {
         insertSort insertSort=new insertSort();
         insertSort.execute();
@@ -15,7 +15,7 @@ public class insertSort extends abstractSort{
         for(int i=1;i<array.length;i++){
             int tmp=array[i];
             int j=i-1;
-            while (j>=0&&tmp<array[j]){
+            while (j>=0&&tmp<=array[j]){
                 array[j+1]=array[j];
                 j--;
             }

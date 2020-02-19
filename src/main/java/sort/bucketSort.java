@@ -2,7 +2,7 @@ package sort;
 
 import java.util.logging.Logger;
 
-public class bucketSort extends abstractSort {
+public class bucketSort extends AbstractSort {
     private static Logger logger = Logger.getLogger(bucketSort.class.getName());
 
     public static void main(String args[]) throws Exception {

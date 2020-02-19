@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Random;
 import java.util.logging.Logger;
 
-public class outerSort extends abstractSort{
+public class outerSort extends AbstractSort {
     private static final String file="E:\\data";
     private static final long NUM_COUNT=Long.MAX_VALUE/20/20/20;
     private static final long flush_threold=1000000;
