@@ -3,6 +3,164 @@
   <component name="ChangeListManager">
     <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/FcyPriorityQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataStructurePratice/FcyPriorityQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/FcyPriorityQueue1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataStructurePratice/FcyPriorityQueue1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne$ProcessStruct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne$ProcessStruct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day1/maxDepth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day1/maxDepth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day1/permute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day1/permute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day1/search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day1/search.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day1/spiralOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day1/spiralOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day1/subSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day1/subSets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day1/uniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/Day1/uniquePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/isPalindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/searchRange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$$anonfun$threeSumClosest$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$$anonfun$threeSumClosest$1$$anonfun$apply$mcVI$sp$2$$anonfun$apply$mcVI$sp$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$$anonfun$threeSumClosest$1$$anonfun$apply$mcVI$sp$2$$anonfun$apply$mcVI$sp$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$$anonfun$threeSumClosest$1$$anonfun$apply$mcVI$sp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$$anonfun$threeSumClosest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day2/threeSumClosest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum$$anonfun$dfs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum$$anonfun$dfs$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/Day3/CombinationSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/LinkUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/LinkUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/deleteDuplicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/deleteDuplicates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/deleteNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/deleteNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/getIntersectionNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/getIntersectionNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/hasCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/hasCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/partition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/partition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/removeElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/removeElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/removeNthFromEnd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/removeNthFromEnd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/reverseKGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/reverseKGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/reverseList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/reverseList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/rotateRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/rotateRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/sortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/sortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/swapPairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/swapPairs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum$$anonfun$dfs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum$$anonfun$dfs$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/candidatesSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$$anonfun$combine1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$$anonfun$combine1$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$$anonfun$combine1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$$anonfun$dfs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/combine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum$3$$anonfun$apply$mcVI$sp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum1$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum1$4$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$$anonfun$minPathSum1$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/minPathSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/nextPermutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique$$anonfun$dfs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/permuteUnique.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/spiralOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$$anonfun$quickSort$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$$anonfun$subSets$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$$anonfun$subSets$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/subSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$$anonfun$uniquePaths$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$$anonfun$uniquePaths$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$$anonfun$uniquePaths$3$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$$anonfun$uniquePaths$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day1/uniquePaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo$$anonfun$continueDemo$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo$$anonfun$continueDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/ContinueDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$4$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$1$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$1$$anonfun$apply$5$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$1$$anonfun$apply$5$$anonfun$apply$6$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$1$$anonfun$apply$5$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$1$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$combinationSum3$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$dfs$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$$anonfun$dfs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/combinationSum2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/divide$$anonfun$divide$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/divide$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pratice/Day2/divide.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/query/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/query/BinarySearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/query/InsertSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/query/InsertSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V1/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V1/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V2/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V2/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V3/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V3/quickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V4/heapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V4/heapSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V4/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V4/quickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/V5/sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/V5/sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/abstractSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/abstractSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/bubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/bubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/bucketSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/heapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/heapSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/insertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/insertSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/mergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/mergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/outerSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/outerSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/outerSortHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/outerSortHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/pratice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/pratice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/quickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/quickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/selectSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/selectSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/shellSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/shellSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sort/sortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/sortUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/MinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/MinStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/MyStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/MyStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/NestedInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/NestedInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/NestedIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/NestedIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/evalRPN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/evalRPN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/inorderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/inorderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/isValid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/isValid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/simplifyPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/simplifyPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/zigzagOrderLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/zigzagOrderLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/AVLTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V1/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V1/AVLTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V2/AVLV2Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V2/AVLV2Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V3/AVLV3Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V3/AVLV3Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V4/AVLV4Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V4/AVLV4Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V5/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V5/AVLTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V6/AVLV6Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V6/AVLV6Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V7/TreeTraversing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V7/TreeTraversing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V8/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V8/AVLTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVL/V9/AVLV9Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVL/V9/AVLV9Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/AVLNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/AVLNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/TireTree/TireTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/TireTree/TireTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/TireTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/TireTreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/Util/BSTIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/Util/BSTIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/Util/Traversing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/Util/Traversing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/Util/TreeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/Util/TreeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/ListUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/ListUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/getAllPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/getAllPrime.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +215,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -184,6 +342,7 @@
       <workItem from="1581768729452" duration="6411000" />
       <workItem from="1582032501462" duration="1332000" />
       <workItem from="1582506474543" duration="2396000" />
+      <workItem from="1582732425796" duration="837000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1580733936321</created>
@@ -266,22 +425,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="579" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581592564931" />
-    <state width="1493" height="110" key="GridCell.Tab.0.bottom" timestamp="1581913473422">
+    <state width="1493" height="176" key="GridCell.Tab.0.bottom" timestamp="1582732349560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581913473422" />
-    <state width="1493" height="110" key="GridCell.Tab.0.center" timestamp="1581913473422">
+    <state width="1493" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582732349560" />
+    <state width="1493" height="176" key="GridCell.Tab.0.center" timestamp="1582732349560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581913473422" />
-    <state width="1493" height="110" key="GridCell.Tab.0.left" timestamp="1581913473422">
+    <state width="1493" height="176" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582732349560" />
+    <state width="1493" height="176" key="GridCell.Tab.0.left" timestamp="1582732349560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581913473422" />
-    <state width="1493" height="110" key="GridCell.Tab.0.right" timestamp="1581913473422">
+    <state width="1493" height="176" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582732349560" />
+    <state width="1493" height="176" key="GridCell.Tab.0.right" timestamp="1582732349560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581913473422" />
+    <state width="1493" height="176" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582732349560" />
     <state width="1493" height="211" key="GridCell.Tab.1.bottom" timestamp="1581757325921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -298,10 +457,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581757325921" />
-    <state x="229" y="0" key="SettingsEditor" timestamp="1581592286197">
+    <state x="229" y="0" key="SettingsEditor" timestamp="1582732348473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="229" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581592286197" />
+    <state x="229" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582732348473" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1581753054778">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
