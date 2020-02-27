@@ -43,4 +43,19 @@ public class inorderTraversal {
         }
         return list;
     }
+    public static List<Integer> inorderStack(Node root){
+        Stack<Node> stack=new Stack<>();
+        List<Integer> list=new ArrayList<>();
+        Node current=root;
+        while (current!=null||!stack.empty()){
+            while (current!=null){
+                stack.push(current);
+                current=current.left;
+            }
+            current=stack.pop();
+            list.add(current.value);
+            current=current.right;
+        }
+        return list;
+    }
 }
