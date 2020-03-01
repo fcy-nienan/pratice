@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="" />
+    <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,11 +36,6 @@
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1377" />
-    <option name="height" value="704" />
   </component>
   <component name="ProjectId" id="1SYI2rhRogdHFkO5WizCRlABQSv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -189,6 +186,7 @@
       <workItem from="1582506474543" duration="2396000" />
       <workItem from="1582732425796" duration="2063000" />
       <workItem from="1582906864959" duration="312000" />
+      <workItem from="1583065537660" duration="1260000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1580733936321</created>
