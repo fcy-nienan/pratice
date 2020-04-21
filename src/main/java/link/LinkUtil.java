@@ -12,6 +12,7 @@ public class LinkUtil {
         }
         System.out.print("null\r\n");
     }
+
     public static int length(ListNode head){
         ListNode p=head;
         int len=0;

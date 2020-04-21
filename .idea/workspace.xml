@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/ExtractorDemo/ExtractorDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/IODemo/SourceDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/RegexDemo/RegexDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionAndParamDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitParamDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/OtherDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scala/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructurePratice/FcyPriorityQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructurePratice/FcyPriorityQueue1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructurePratice/HeapOne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructurePratice/HeapTwo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/link/removeNthFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/link/removeNthFromEnd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stack/evalRPN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stack/evalRPN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stack/inorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stack/inorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stack/zigzagOrderLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stack/zigzagOrderLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/FcyPriorityQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/FcyPriorityQueue1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne$ProcessStruct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataStructurePratice/HeapTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stack/evalRPN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/evalRPN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stack/inorderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/inorderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/link/LinkUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/link/LinkUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/query/InsertSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/query/InsertSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pratice.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/link/LinkUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/LinkUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/query/InsertSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/query/InsertSearch.class" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,21 +27,63 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/scala/RegexDemo/RegexDemo.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/scala/ExtractorDemo/ExtractorDemo.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
     <option name="SCHEME" value="Project" />
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>apply</find>
+      <find>update</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://scala-decompiled/LinearSeqOptimized.decompiled.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,6 +93,18 @@
         <option value="$PROJECT_DIR$/src/main/java/stack/zigzagOrderLevel.java" />
         <option value="$PROJECT_DIR$/src/main/java/link/deleteDuplicates.java" />
         <option value="$PROJECT_DIR$/src/main/java/link/removeNthFromEnd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/link/LinkUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/InsertSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/implicit/DemoImplicit.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/implicitDemo/Helper.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/implicitDemo/DemoImplicit.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionAndParamDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitParamDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/implicitDemo/OtherDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/IODemo/SourceDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/RegexDemo/RegexDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scala/ExtractorDemo/ExtractorDemo.scala" />
       </list>
     </option>
   </component>
@@ -113,7 +166,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pratice" type="b2602c69:ProjectViewProjectNode" />
@@ -121,7 +174,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtractorDemo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,13 +222,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.rotateRight">
-    <configuration name="partition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="link.partition" />
+  <component name="RunManager" selected="Application.RegexDemo">
+    <configuration name="DemoImplicit" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala.implicitDemo.ImplicitConversionDemo" />
       <module name="pratice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="link.*" />
+          <option name="PATTERN" value="scala.`implicit`.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,12 +236,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="removeElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="link.removeElements" />
+    <configuration name="ExtractorDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala.ExtractorDemo.ExtractorDemo" />
       <module name="pratice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="link.*" />
+          <option name="PATTERN" value="scala.ExtractorDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,12 +249,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rotateRight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="link.rotateRight" />
+    <configuration name="ImplicitParamDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala.implicitDemo.ImplicitParamDemo" />
       <module name="pratice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="link.*" />
+          <option name="PATTERN" value="scala.implicitDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,12 +262,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.V5.sort" />
+    <configuration name="RegexDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala.RegexDemo.RegexDemo" />
       <module name="pratice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sort.V5.*" />
+          <option name="PATTERN" value="scala.RegexDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -221,12 +275,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="subSets" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="pratice.Day1.subSets" />
+    <configuration name="SourceDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala.IODemo.SourceDemo" />
       <module name="pratice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pratice.Day1.*" />
+          <option name="PATTERN" value="scala.IODemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,11 +290,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.rotateRight" />
-        <item itemvalue="Application.removeElements" />
-        <item itemvalue="Application.partition" />
-        <item itemvalue="Application.subSets" />
-        <item itemvalue="Application.sort" />
+        <item itemvalue="Application.RegexDemo" />
+        <item itemvalue="Application.ExtractorDemo" />
+        <item itemvalue="Application.SourceDemo" />
+        <item itemvalue="Application.DemoImplicit" />
+        <item itemvalue="Application.ImplicitParamDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -285,6 +339,8 @@
       <workItem from="1581768729452" duration="6411000" />
       <workItem from="1582032501462" duration="1332000" />
       <workItem from="1582506474543" duration="2396000" />
+      <workItem from="1586399426962" duration="1901000" />
+      <workItem from="1586523582015" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1580733936321</created>
@@ -297,34 +353,34 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5421000" />
+    <option name="totallyTimeSpent" value="9733000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28129715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22280967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24552846" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2254902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40813008" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37723577" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2124183" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3284553" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.27804878" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.16176471" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32930514" />
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
@@ -602,55 +658,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/Day1/subSets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructurePratice/FcyPriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1281">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructurePratice/FcyPriorityQueue1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructurePratice/HeapOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1181">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructurePratice/HeapTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-541">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructurePratice/HeapOne.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructurePratice/HeapTwo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pratice/Day2/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -660,20 +669,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pratice/package-info.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/getAllPrime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/ListUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/link/deleteNode.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,20 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/link/LinkUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/link/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" selection-start-line="6" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -836,6 +817,198 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Language/java/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4546">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/InsertSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/ListUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#236#256#0" expanded="true" />
+            <element signature="e#296#392#1" expanded="true" />
+            <element signature="e#429#522#0" expanded="true" />
+            <element signature="e#429#522#0" expanded="true" />
+            <element signature="e#563#626#0" expanded="true" />
+            <element signature="e#563#626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/getAllPrime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/link/LinkUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/link/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/package-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/Language/Scala/lib/scala-library.jar!/scala/collection/TraversableLike.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/implicitDemo/Helper.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Language/Scala/scala-2.13.1/scala-2.13.1/src/library/scala/collection/immutable/WrappedString.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="34" column="93" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Language/Scala/lib/scala-library.jar!/scala/collection/immutable/IndexedSeq.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Language/Scala/scala-2.13.1/scala-2.13.1/src/library/scala/Predef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4860">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#305#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Language/Scala/lib/scala-library.jar!/scala/collection/immutable/StringLike.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionAndParamDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/implicitDemo/OtherDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitParamDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/Day1/maxDepth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/Day2/isPalindrome.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/IODemo/SourceDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Language/Scala/scala-2.13.1/scala-2.13.1/src/library/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="72" column="44" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Language/Scala/lib/scala-library.jar!/scala/collection/LinearSeqOptimized.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Language/Scala/scala-2.13.1/scala-2.13.1/src/library/scala/collection/immutable/List.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="617" column="3" lean-forward="true" selection-start-line="617" selection-start-column="3" selection-end-line="617" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Language/Scala/scala-2.13.1/scala-2.13.1/src/library/scala/Array.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="157" column="10" lean-forward="true" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/RegexDemo/RegexDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scala/ExtractorDemo/ExtractorDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
