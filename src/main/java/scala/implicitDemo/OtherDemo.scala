@@ -5,8 +5,6 @@ object OtherDemo {
     implicit val str="asb";
     implicit val int=2
     println(implicitly[String] * implicitly[Int])
-    y.hashCode()
-    x.hashCode()
 
   }
   def x=new Object{
