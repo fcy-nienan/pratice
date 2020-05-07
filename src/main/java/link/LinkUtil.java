@@ -35,7 +35,7 @@ public class LinkUtil {
     public static ListNode create(int len){
         ListNode head=new ListNode(0);
         ListNode p=head;
-        for(int i=0;i<len;i++){
+        for(int i=1;i<=len;i++){
             p.next=new ListNode(i);
             p=p.next;
         }
