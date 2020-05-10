@@ -1,9 +1,8 @@
 package link;
 
-public class LinkUtil {
-    public static void main(String args[]) {
+import java.util.concurrent.ThreadLocalRandom;
 
-    }
+public class LinkUtil {
     public static void disListNode(ListNode head){
         ListNode tmp=head;
         while (tmp!=null){
@@ -34,9 +33,10 @@ public class LinkUtil {
     }
     public static ListNode create(int len){
         ListNode head=new ListNode(0);
+        ThreadLocalRandom random=ThreadLocalRandom.current();
         ListNode p=head;
         for(int i=1;i<=len;i++){
-            p.next=new ListNode(i);
+            p.next=new ListNode(random.nextInt(len));
             p=p.next;
         }
         return head.next;
