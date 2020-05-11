@@ -20,44 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/link/insertSortList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/link/nextLargerNodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/link/reorderList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/link/oddEvenList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/Day2/isPalindrome.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/Day2/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/Day2/searchRange.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/Day2/threeSumClosest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/Day3/CombinationSum.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/Day3/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/link/LinkUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/link/LinkUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/link/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/link/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/link/deleteDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/link/deleteDuplicates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/link/swapPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/link/swapPairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/candidatesSum.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/combine.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/minPathSum.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/nextPermutation.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/permuteUnique.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/spiralOrder.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/subSets.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day1/uniquePaths.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day2/ContinueDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day2/combinationSum2.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day2/divide.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/Day2/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pratice/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/ExtractorDemo/ExtractorDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/IODemo/SourceDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/RegexDemo/RegexDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionAndParamDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitConversionDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/ImplicitParamDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/implicitDemo/OtherDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scala/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +146,7 @@
       <workItem from="1586399426962" duration="1901000" />
       <workItem from="1586523582015" duration="603000" />
       <workItem from="1589091633664" duration="79000" />
-      <workItem from="1589091801164" duration="16840000" />
+      <workItem from="1589091801164" duration="19324000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1580733936321</created>
@@ -231,22 +195,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="614" y="418" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589091840295" />
-    <state width="1869" height="52" key="GridCell.Tab.0.bottom" timestamp="1589128302721">
+    <state width="1869" height="215" key="GridCell.Tab.0.bottom" timestamp="1589129622939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="52" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589128302721" />
-    <state width="1869" height="52" key="GridCell.Tab.0.center" timestamp="1589128302721">
+    <state width="1869" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
+    <state width="1869" height="215" key="GridCell.Tab.0.center" timestamp="1589129622939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="52" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589128302721" />
-    <state width="1869" height="52" key="GridCell.Tab.0.left" timestamp="1589128302721">
+    <state width="1869" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
+    <state width="1869" height="215" key="GridCell.Tab.0.left" timestamp="1589129622939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="52" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589128302721" />
-    <state width="1869" height="52" key="GridCell.Tab.0.right" timestamp="1589128302721">
+    <state width="1869" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
+    <state width="1869" height="215" key="GridCell.Tab.0.right" timestamp="1589129622939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="52" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589128302721" />
+    <state width="1869" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
     <state width="1869" height="314" key="GridCell.Tab.1.bottom" timestamp="1589127495175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
