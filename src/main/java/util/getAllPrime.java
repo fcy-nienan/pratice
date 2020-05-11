@@ -28,6 +28,7 @@ public class getAllPrime {
             }
         }
         return list;
+
     }
     private static boolean isPrimeOptimitic(int n){
         if (n%24==0)return false;
