@@ -278,6 +278,51 @@
     <MESSAGE value="1" />
     <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="WindowStateProjectService">
+    <state x="614" y="418" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1589091840295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="418" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589091840295" />
+    <state width="1869" height="215" key="GridCell.Tab.0.bottom" timestamp="1589129622939">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
+    <state width="1869" height="215" key="GridCell.Tab.0.center" timestamp="1589129622939">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
+    <state width="1869" height="215" key="GridCell.Tab.0.left" timestamp="1589129622939">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
+    <state width="1869" height="215" key="GridCell.Tab.0.right" timestamp="1589129622939">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
+    <state width="1869" height="314" key="GridCell.Tab.1.bottom" timestamp="1589127495175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="314" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
+    <state width="1869" height="314" key="GridCell.Tab.1.center" timestamp="1589127495175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="314" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
+    <state width="1869" height="314" key="GridCell.Tab.1.left" timestamp="1589127495175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="314" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
+    <state width="1869" height="314" key="GridCell.Tab.1.right" timestamp="1589127495175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="314" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
+    <state x="312" y="0" key="SettingsEditor" timestamp="1589091989636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589091989636" />
+  </component>
+>>>>>>> tmp
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
