@@ -27,6 +27,23 @@ public class quickSort extends AbstractSort {
 
     @Override
     protected void sort(int[] array) {
-        quickSort(array,0,array.length-1);
+        quickSort1(array,0,array.length-1);
+    }
+    public static void quickSort1(int[] array,int low,int high){
+        int start=low,end=high;
+        int key=array[start];
+        while(start<end){
+            while (start<end&&array[end]>=key){
+                end--;
+            }
+            sortUtil.swap(array,start,end);
+            while(start<end&&array[start]<=key){
+                start++;
+            }
+            sortUtil.swap(array,start,end);
+        }
+        if (start!=low)quickSort1(array,low,start);
+        if (end!=high)quickSort1(array,start+1,high);
+
     }
 }
