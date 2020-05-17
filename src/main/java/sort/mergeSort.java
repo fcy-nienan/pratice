@@ -1,6 +1,6 @@
 package sort;
 //归并排序
-public class mergeSort extends abstractSort{
+public class mergeSort extends AbstractSort {
     public static void main(String args[]) {
         new mergeSort().execute();
     }
@@ -97,4 +97,38 @@ public class mergeSort extends abstractSort{
         }
         array[j+d]=insertValue;
     }
+
+    public void mergeSort1(int[] array){
+
+    }
+    public void merge(int[] array,int start,int end){
+        if (start<end){
+            int mid=(start+end)/2;
+            merge(array,start,mid);
+            merge(array,mid+1,end);
+            sort1(array,start,mid,end);
+        }
+    }
+    public void sort1(int[] array,int start,int mid,int end){
+        int i=start,j=mid+1,t=0;
+        int[] tmp=new int[array.length];
+        while (i<=start&&j<=end){
+            if (array[i]<array[j]){
+                tmp[t++]=array[i++];
+            }else{
+                tmp[t++]=array[j++];
+            }
+        }
+        while (i<=mid){
+            tmp[t++]=array[i++];
+        }
+        while (j<=end){
+            tmp[t++]=array[j++];
+        }
+        t=0;
+        while (start<=end){
+            array[start++]=tmp[t++];
+        }
+    }
+
 }

@@ -19,8 +19,13 @@ public class sortUtil {
     public static int checkArray2(int[] array){
         assert array!=null;
         if (array.length<2)return 1;
+        int prev=array[0];
         int b=array[0]<array[array.length-1]?1:-1;//这个地方用首尾两个元素比较
+        boolean allEqual=true;
         for(int i=1;i<array.length;i++){
+            if (array[i]!=prev){
+                allEqual=false;
+            }
             if (array[i]==array[i-1]){//如果存在相等的元素,那么跳过
                 continue;
             }
@@ -31,6 +36,7 @@ public class sortUtil {
                 return 0;
             }
         }
+        if (allEqual)return 1;
         return b;
     }
     public static int checkArray(int[] array){

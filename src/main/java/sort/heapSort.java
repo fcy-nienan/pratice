@@ -1,8 +1,6 @@
 package sort;
 
-import java.util.Arrays;
-
-public class heapSort extends abstractSort{
+public class heapSort extends AbstractSort {
 
     public static void main(String args[]) {
         new heapSort().execute();
@@ -10,13 +8,14 @@ public class heapSort extends abstractSort{
 
     @Override
     protected void sort(int[] array) {
-        for(int i=array.length/2-1;i>=0;i--){
+        heapSort1(array);
+    }
+    private static void heapSort1(int[] array){
+        for (int i=array.length/2-1;i>=0;i--){
             adjustHeap(array,i,array.length);
         }
         for (int i=1;i<array.length;i++){
-            int tmp=array[0];
-            array[0]=array[array.length-i];
-            array[array.length-i]=tmp;
+            sortUtil.swap(array,0,array.length-i);
             adjustHeap(array,0,array.length-i);
         }
     }
@@ -26,9 +25,7 @@ public class heapSort extends abstractSort{
                 i=i+1;
             }
             if (array[i]<array[current]){
-                int tmp=array[current];
-                array[current]=array[i];
-                array[i]=tmp;
+                sortUtil.swap(array,current,i);
                 current=i;
             }else{
                 break;

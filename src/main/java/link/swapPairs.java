@@ -14,10 +14,13 @@ public class swapPairs {
         while (current!=null){
             if (current.next==null)break;
             next=current.next;
+
             current.next=next.next;
             next.next=current;
-            prev.next=next;//特别需要注意的是这个prev,在进行下一轮交换的时候需要将前面的next指向交换后的链表
+
+            prev.next=next;//特别需要注意的是这个prev,在进行下一轮交换的时候需要更新prev.next的值
             prev=current;
+
             current=current.next;
         }
         return two;

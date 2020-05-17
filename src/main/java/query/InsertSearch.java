@@ -1,9 +1,13 @@
 package query;
 
+import java.io.*;
 import java.util.Objects;
 
 public class InsertSearch {
     public static void main(String[] args) {
+
+        FileOutputStream out;
+        BufferedOutputStream outputStream;
         int arrayCount=3000;
         int[] array=new int[arrayCount];
         for(int i=0;i<array.length;i++){

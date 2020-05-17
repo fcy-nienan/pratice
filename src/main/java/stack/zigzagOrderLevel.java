@@ -1,14 +1,13 @@
 package stack;
 
-import tree.TreeNode;
-import tree.TreeUtil;
+import tree.Node;
+import tree.Util.TreeUtil;
 
 import java.util.*;
-import java.util.logging.Logger;
 
 public class zigzagOrderLevel {
     public static void main(String[] args) {
-        TreeNode root= TreeUtil.create(new int[]{3,9,20,-1,-1,7});
+        Node root= TreeUtil.create(new int[]{3,9,20,-1,-1,7});
         dfs(root);
         List<List<Integer>> list=zigzagLevelOrder(root);
         for(List<Integer> t:list){
@@ -17,18 +16,18 @@ public class zigzagOrderLevel {
             }
         }
     }
-    public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    public static List<List<Integer>> zigzagLevelOrder(Node root) {
         List<List<Integer>> lists=new ArrayList<>();
         if (root==null)return lists;
-        Stack<TreeNode> stack=new Stack<>();
+        Stack<Node> stack=new Stack<>();
         stack.push(root);
         boolean face=false;
         while (!stack.isEmpty()){
-            TreeNode node;
+            Node node;
             List<Integer> listSingle=new ArrayList<>();
-            List<TreeNode> tmpList=new ArrayList<>();
+            List<Node> tmpList=new ArrayList<>();
             while (!stack.empty()&&(node=stack.pop())!=null){
-                listSingle.add(node.val);
+                listSingle.add(node.value);
                 if (face) {
                     if (node.right != null) {
                         tmpList.add(node.right);
@@ -47,13 +46,13 @@ public class zigzagOrderLevel {
             }
             face=!face;
             lists.add(listSingle);
-            for(TreeNode n:tmpList){
+            for(Node n:tmpList){
                 stack.push(n);
             }
         }
         return lists;
     }
-    public static void dfs(TreeNode root){
+    public static void dfs(Node root){
         System.out.println(root);
         if (root.left!=null){
             dfs(root.left);
@@ -62,9 +61,10 @@ public class zigzagOrderLevel {
             dfs(root.right);
         }
     }
-    public static void bfs(TreeNode root){
+    public static void bfs(Node root){
         if (root!=null){
-            System.out.println(root.val);
+            System.out.println(root.value);
         }
     }
+
 }

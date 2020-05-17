@@ -1,8 +1,6 @@
 package sort;
 
-import java.util.Arrays;
-
-public class shellSort extends abstractSort{
+public class shellSort extends AbstractSort {
     public static void main(String args[]) {
         new shellSort().execute();
     }
@@ -90,6 +88,28 @@ public class shellSort extends abstractSort{
         t=0;
         while (start<=end){
             array[start++]=temp[t++];
+        }
+    }
+    public void adjustHead(int[] array,int len,int current){
+        for (int i=current*2+1;i<len;i=current*2+1){
+            if (i+1<len&&array[i]<array[i+1]){
+                i++;
+            }
+            if (array[current]<array[i]){
+                sortUtil.swap(array,i,current);
+                current=i;
+            }else{
+                break;
+            }
+        }
+    }
+    public void heapSort(int[] array){
+        for (int i=array.length/2-1;i>=0;i--){
+            adjustHead(array,array.length,i);
+        }
+        for (int i=1;i<array.length;i++){
+            sortUtil.swap(array,0,array.length-i);
+            adjustHead(array,array.length-i,0);
         }
     }
 }
