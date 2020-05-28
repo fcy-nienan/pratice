@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4df4634-ad22-4acf-ad88-242cace69887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/link/oddEvenList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/link/getDecimalValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/link/mergeKList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/link/numComponents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/link/reOrderLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/link/reverseKGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/link/sortList.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,23 +66,18 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.38045976" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.partition">
-    <configuration name="addTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="link.addTwoNumbers" />
+  <component name="RunManager" selected="Application.getDecimalValue">
+    <configuration name="deleteDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="link.deleteDuplicates" />
       <module name="pratice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="link.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="deleteDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="link.deleteDuplicates" />
+    <configuration name="getDecimalValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="link.getDecimalValue" />
       <module name="pratice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,6 +90,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mergeKList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="link.mergeKList" />
+      <module name="pratice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="partition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="link.partition" />
       <module name="pratice" />
@@ -97,20 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="reorderList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="link.reorderList" />
-      <module name="pratice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.getDecimalValue" />
+        <item itemvalue="Application.mergeKList" />
         <item itemvalue="Application.partition" />
         <item itemvalue="Application.deleteDuplicates" />
         <item itemvalue="Application.insertSortList" />
-        <item itemvalue="Application.reorderList" />
-        <item itemvalue="Application.addTwoNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +146,12 @@
       <workItem from="1586399426962" duration="1901000" />
       <workItem from="1586523582015" duration="603000" />
       <workItem from="1589091633664" duration="79000" />
-      <workItem from="1589091801164" duration="19324000" />
+      <workItem from="1589091801164" duration="20250000" />
+      <workItem from="1589381495166" duration="592000" />
+      <workItem from="1589383939689" duration="36000" />
+      <workItem from="1589807398842" duration="6008000" />
+      <workItem from="1590250407790" duration="7212000" />
+      <workItem from="1590417481016" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1580733936321</created>
@@ -195,42 +200,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="614" y="418" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589091840295" />
-    <state width="1869" height="215" key="GridCell.Tab.0.bottom" timestamp="1589129622939">
+    <state x="624" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589809604132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
-    <state width="1869" height="215" key="GridCell.Tab.0.center" timestamp="1589129622939">
+    <state x="624" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589809604132" />
+    <state x="699" y="162" key="FileChooserDialogImpl" timestamp="1590333236590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
-    <state width="1869" height="215" key="GridCell.Tab.0.left" timestamp="1589129622939">
+    <state x="699" y="162" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590333236590" />
+    <state width="1869" height="210" key="GridCell.Tab.0.bottom" timestamp="1590252653456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
-    <state width="1869" height="215" key="GridCell.Tab.0.right" timestamp="1589129622939">
+    <state width="1869" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590252653456" />
+    <state width="1869" height="210" key="GridCell.Tab.0.center" timestamp="1590252653456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589129622939" />
-    <state width="1869" height="314" key="GridCell.Tab.1.bottom" timestamp="1589127495175">
+    <state width="1869" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590252653456" />
+    <state width="1869" height="210" key="GridCell.Tab.0.left" timestamp="1590252653456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="314" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
-    <state width="1869" height="314" key="GridCell.Tab.1.center" timestamp="1589127495175">
+    <state width="1869" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590252653456" />
+    <state width="1869" height="210" key="GridCell.Tab.0.right" timestamp="1590252653456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="314" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
-    <state width="1869" height="314" key="GridCell.Tab.1.left" timestamp="1589127495175">
+    <state width="1869" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590252653456" />
+    <state width="1869" height="314" key="GridCell.Tab.1.bottom" timestamp="1590252137464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="314" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
-    <state width="1869" height="314" key="GridCell.Tab.1.right" timestamp="1589127495175">
+    <state width="1869" height="314" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590252137464" />
+    <state width="1869" height="314" key="GridCell.Tab.1.center" timestamp="1590252137464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="314" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589127495175" />
-    <state x="312" y="0" key="SettingsEditor" timestamp="1589091989636">
+    <state width="1869" height="314" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590252137464" />
+    <state width="1869" height="314" key="GridCell.Tab.1.left" timestamp="1590252137464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589091989636" />
+    <state width="1869" height="314" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590252137464" />
+    <state width="1869" height="314" key="GridCell.Tab.1.right" timestamp="1590252137464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="314" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590252137464" />
+    <state x="312" y="0" key="SettingsEditor" timestamp="1590333239469">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590333239469" />
+    <state x="92" y="65" width="1795" height="935" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1590333238423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="65" width="1795" height="935" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590333238423" />
+    <state x="539" y="5" key="search.everywhere.popup" timestamp="1590252337450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590252337450" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,14 +322,14 @@
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/link/insertSortList.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/link/deleteDuplicates.java</url>
           <line>15</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/link/mergeKList.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/Day2/isPalindrome.scala</url>
