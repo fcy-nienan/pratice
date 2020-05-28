@@ -16,28 +16,54 @@ public class sortUtil {
 //    这个判断数组是否有序的程序更加合理
 //    首先是断言数组不为空,其次是如果数组是正序的或者逆序的那么是必须遍历数组所有成员的
 //    但如果数组是无序的那么就只要发现数组前面的顺序和后面的顺序不相同就返回0,省去了遍历剩余的元素
+
+
     public static int checkArray2(int[] array){
         assert array!=null;
         if (array.length<2)return 1;
         int prev=array[0];
-        int b=array[0]<array[array.length-1]?1:-1;//这个地方用首尾两个元素比较
         boolean allEqual=true;
-        for(int i=1;i<array.length;i++){
-            if (array[i]!=prev){
-                allEqual=false;
+        int b=array[0]<array[array.length-1]?1:-1;
+
+        if (b==1){//或许是正序
+            for (int i=1;i<array.length;i++){
+                if (array[i]<array[i-1]){
+                    return 0;
+                }
             }
-            if (array[i]==array[i-1]){//如果存在相等的元素,那么跳过
-                continue;
+            return b;
+        }else{//或许是逆序或者全等
+            for (int i=1;i<array.length;i++){
+                if (array[i]>array[i-1]){
+                    return 0;
+                }
+                if (array[i]!=prev){
+                    allEqual=false;
+                }
             }
-            if (b==1&&array[i]<array[i-1]){
-                return 0;
-            }
-            if (b==-1&&array[i]>array[i-1]){
-                return 0;
-            }
+            if (allEqual)return 1;
+            return b;
         }
-        if (allEqual)return 1;
-        return b;
+
+
+//
+//        boolean allEqual=true;
+//        for(int i=1;i<array.length;i++){
+//            if (array[i]!=prev){
+//                allEqual=false;
+//            }
+//            if (array[i]==array[i-1]){//如果存在相等的元素,那么跳过
+//                continue;
+//            }
+//            if (b==1&&array[i]<array[i-1]){
+//                return 0;
+//            }
+//            if (b==-1&&array[i]>array[i-1]){
+//                return 0;
+//            }
+//        }
+//        if (allEqual)return 1;
+//        return b;
     }
     public static int checkArray(int[] array){
         int sequenceCount=0,reserveCount=0;

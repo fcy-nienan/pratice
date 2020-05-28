@@ -21,10 +21,10 @@ public class heapSort extends AbstractSort {
     }
     public static void adjustHeap(int[] array,int current,int len){
         for(int i=current*2+1;i<len;i=current*2+1){
-            if (i+1<len&&array[i]>array[i+1]){
+            if (i+1<len&&array[i]<array[i+1]){
                 i=i+1;
             }
-            if (array[i]<array[current]){
+            if (array[i]>array[current]){
                 sortUtil.swap(array,current,i);
                 current=i;
             }else{
