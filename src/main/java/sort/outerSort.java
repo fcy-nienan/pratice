@@ -1,32 +1,86 @@
 package sort;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.*;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Logger;
-
 public class outerSort extends AbstractSort {
-    private static final String file="E:\\data";
-    private static final String outputPath="E:\\split\\";
-    private static final String orderPath="E:\\split\\ordered\\";
-    private static final String mergePath="E:\\split\\merge\\";
+    private static final String root="E:\\outerSort\\";
+    private static final String file="E:\\outerSort\\data";
+    private static final String outputPath="E:\\outerSort\\split\\";
+    private static final String orderPath="E:\\outerSort\\ordered\\";
+    private static final String mergePath="E:\\outerSort\\merge\\";
     private static final long NUM_COUNT=1111111;
     private static final long flush_threold=10000;
+    public static void init(){
+        delete(root);
+    }
+    private static void deleteFile(File file){
+        if (file.isFile())file.delete();
+        else{
+            File[] files = file.listFiles();
+            if (files==null)return;
+            for (File file1 : files) {
+                deleteFile(file1);
+            }
+        }
+    }
+    private static void delete(String path){
+        deleteFile(new File(path));
+    }
     static {
+        init();
         File file=new File(outputPath);
+        if (file.exists()){
+            file.delete();
+        }
         file.mkdirs();
         file=new File(orderPath);
+        if (file.exists()){
+            file.delete();
+        }
         file.mkdirs();
         file=new File(mergePath);
+        if (file.exists()){
+            file.delete();
+        }
         file.mkdirs();
+
     }
     public static void main(String args[]) throws Exception {
 //        tail(10);
-//        prepareFile();
-//        splitFile(file,outputPath,10);
+        prepareFile();
+        splitFile(file, outputPath, 10);
         sortAllFile(outputPath);
+        mergeAllFile(orderPath,mergePath);
+    }
+    public static void mergeAllFile(String inPath,String mergePath) throws Exception {
+        File file=new File(inPath);
+        File[] files = file.listFiles();
+        if (files.length==1){
+            System.out.println("合并完成!");
+            return;
+        }
+        int i=0;
+        for (;i<files.length;i+=2){
+            if (i<file.length()&&(i+1)<file.length()) {
+                File oneFile = files[i];
+                File twoFile = files[i + 1];
+                mergeFile(oneFile.getAbsolutePath(), twoFile.getAbsolutePath(), mergePath);
+                oneFile.delete();
+                twoFile.delete();
+            }else{
+                break;
+            }
+        }
+        if (i<files.length){
+
+        }
     }
     private static int[] transferToIntArray(String msg){
         String[] split = msg.split(",");
@@ -62,16 +116,19 @@ public class outerSort extends AbstractSort {
         }
         return temp;
     }
-    public static void mergeFile(String onePath,String twoPath)throws Exception{
+    public static void mergeFile(String onePath,String twoPath,String mergedFilePath)throws Exception{
+        System.out.println("开始merge文件:"+onePath+","+twoPath);
         File file1=new File(onePath);
         File file2=new File(twoPath);
         BufferedReader one=new BufferedReader(new InputStreamReader(new FileInputStream(file1),"utf-8"));
         BufferedReader two=new BufferedReader(new InputStreamReader(new FileInputStream(file2),"utf-8"));
-        File mergeFile=new File(mergePath+file1.getName()+"--merge--"+file2.getName());
+        String mergeFileName=mergedFilePath+file1.getName()+"--merge--"+file2.getName();
+        File mergeFile=new File(mergeFileName);
         BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(mergeFile),"utf-8"));
+        String msg1,msg2;
         while (true){
-            String msg1=one.readLine();
-            String msg2=two.readLine();
+            msg1=one.readLine();
+            msg2=two.readLine();
             if (msg1==null||msg2==null){
                 break;
             }
@@ -83,9 +140,20 @@ public class outerSort extends AbstractSort {
             writer.newLine();
             writer.flush();
         }
+        while ((msg1=one.readLine())!=null){
+            writer.write(msg1);
+            writer.newLine();
+            writer.flush();
+        }
+        while ((msg2=two.readLine())!=null){
+            writer.write(msg2);
+            writer.newLine();
+            writer.flush();
+        }
         one.close();
         two.close();
         writer.close();
+        System.out.println("merge文件完成:"+mergeFileName);
     }
     public static void sortAllFile(String path) throws Exception {
         File file=new File(path);
@@ -93,14 +161,16 @@ public class outerSort extends AbstractSort {
         for (int i=0;i<files.length;i++) {
             File file1 = files[i];
             if (file1.isFile()){
-                sortOneFile(file1.getAbsolutePath(),orderPath,"ordered"+i);
+                sortOneFile(file1.getAbsolutePath(),orderPath,file1.getName()+"--ordered--"+i);
             }
         }
     }
     public static void sortOneFile(String path,String orderPath,String fileName)throws Exception{
+        System.out.println("开始排序文件:"+path);
         int[] oneFileArray = getOneFileArray(path);
         quickSort(oneFileArray,0,oneFileArray.length-1);
         writeToFile(oneFileArray,orderPath+fileName);
+        System.out.println("文件排序完毕:"+orderPath+fileName);
     }
     public static void writeToFile(int[] array,String outPath)throws Exception{
         File file=new File(outPath);
@@ -159,6 +229,7 @@ public class outerSort extends AbstractSort {
     * count:拆分行数
     * */
     private static void splitFile(String path,String outputPath,int count)throws Exception{
+        System.out.println("开始拆分文件:"+path);
         File file=new File(path);
         FileInputStream fileInputStream=new FileInputStream(file);
         BufferedReader reader=new BufferedReader(new InputStreamReader(fileInputStream,"utf-8"));
@@ -191,8 +262,10 @@ public class outerSort extends AbstractSort {
         writer.flush();
         writer.close();
         writer=null;
+        System.out.println("文件拆分完毕:"+outputPath+"("+fileIncre+")");
     }
-    private static void prepareFile() throws IOException {
+    public static void prepareFile() throws IOException {
+        System.out.println("开始生成文件");
         Random random=new Random();
         FileOutputStream fileOutputStream=new FileOutputStream(file);
         BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(fileOutputStream,"utf-8"));
@@ -211,6 +284,7 @@ public class outerSort extends AbstractSort {
         writer.write(builder.toString());
         writer.flush();
         writer.close();
+        System.out.println("文件生成完毕:"+file);
     }
     @Override
     protected void sort(int[] array) {
