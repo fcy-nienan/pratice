@@ -3,11 +3,15 @@ import CommonUtil.FileUtil;
 import CommonUtil.IOUtil;
 import CommonUtil.StartWatch;
 import com.sun.scenario.effect.Merge;
+import lombok.extern.slf4j.Slf4j;
+import sun.nio.ch.ThreadPool;
 
 import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.*;
-
+@Slf4j
 public class outerSort extends AbstractSort {
     private static final String root="E:\\outerSort\\";//根目录
     private static final String file="E:\\outerSort\\data";//原始文件
@@ -15,10 +19,9 @@ public class outerSort extends AbstractSort {
     private static final String orderPath="E:\\outerSort\\ordered\\";//单个文件排序后放置的目录
     private static final String mergePath="E:\\outerSort\\merge\\";//最后归并的目录
     private static boolean init=true;//初始化并清空相关目录
-    private static final int NUM_COUNT=11111111;//生成的原始文件数字个数
+    private static final int NUM_COUNT=111111111;//生成的原始文件数字个数
     private static final int LINE_COUNT=400;//每行数字个数
     private static final int splitLine=50;//拆分文件时多少行拆分为一个文件
-    private static ThreadPoolExecutor executor=new ThreadPoolExecutor(30,100,100, TimeUnit.SECONDS,new ArrayBlockingQueue(100));
     static {
 //        init=false;
         if (init) {
@@ -35,21 +38,25 @@ public class outerSort extends AbstractSort {
     public static void main(String args[]) throws Exception {
         StartWatch instance = StartWatch.instance();
         instance.init();
-        PrepareFile.PrepareFile(Integer.MAX_VALUE,NUM_COUNT,LINE_COUNT);
+        PrepareFile.PrepareFile(file,Integer.MAX_VALUE,NUM_COUNT,LINE_COUNT);
         instance.cost("prepareFile");
         SplitFile.splitFile(file, splitPath, splitLine);
         instance.cost("splitFile");
-        SortFile.sortAllFile(splitPath,LINE_COUNT,4);
+        SortFile.sortAllFile(splitPath,LINE_COUNT,100,SortFile.TaskNumThreshold);
         instance.cost("sortAllFile");
-        Rename.cpDirAndRename(orderPath,mergePath);
+        Rename.cpDirAndRename(orderPath,mergePath,20);
         instance.cost("cpDirAndRename");
-        MergeFile.mergeAllFile(mergePath,0,0);
+        MergeFile.mergeFile(mergePath,0,0);
         instance.cost("mergeAllFile");
+        Verify.valid(OtherTool.getMergePath());
+        instance.cost("verify");
+
     }
     //一些验证的方法
     private static class Verify{
         //验证排序结果是否正确
         private static void valid(String inpath) throws IOException {
+            log.info("----------------------------------------------------------------------------------------------");
             BufferedReader reader=IOUtil.BufferedReader(inpath);
             String msg="";
             int pre=0;
@@ -60,13 +67,14 @@ public class outerSort extends AbstractSort {
                 lines++;
                 for (int i=0;i<ints.length;i++){
                     if (ints[i]<pre){
-                        System.out.println("验证结果:排序错误!"+lines+"-"+ints[i]+"-"+pre);
+                        log.info("验证结果:排序错误!"+lines+"-"+ints[i]+"-"+pre);
                         return;
                     }
                     pre=ints[i];
                 }
             }
-            System.out.println("验证结果:排序正确!");
+            log.info("验证结果:排序正确!");
+            log.info("----------------------------------------------------------------------------------------------");
         }
         //统计目录下所有文件中数字总数
         private static long checkDirCount(String dir) throws IOException {
@@ -176,29 +184,109 @@ public class outerSort extends AbstractSort {
         private static String getMergeFileName(int level,int id){
             return "merge-"+level+"-"+id;
         }
-        //将排好序的文件移动到merge目录并且重命名
-        public static void cpDirAndRename(String inDir,String outDir) throws IOException {
-            FileUtil.cpDir(inDir,outDir);
-            File file=new File(outDir);
-            File[] files = file.listFiles();
-            if (files!=null){
-                for (File file1 : files) {
-                    String newName=file1.getParent()+"\\merge-"+Rename.orderId(file1.getName());
-                    file1.renameTo(new File(newName));
-                }
+        private static class cpTask implements Runnable{
+            private File[] files;
+            private int start;
+            private int end;
+            private CountDownLatch latch;
+            private String otherPath;
+            public cpTask(File[] files,int start,int end,CountDownLatch latch,String otherPath){
+                this.files=files;
+                this.start=start;
+                this.end=end;
+                this.latch=latch;
+                this.otherPath=otherPath;
             }
+            public void start(File file) throws IOException {
+                if (!file.isFile())return;
+                FileInputStream fileInputStream = IOUtil.FileInputStream(file);
+                FileOutputStream outputStream = IOUtil.FileOutputStream(otherPath + "merge-" + Rename.orderId(file.getName()));
+                IOUtil.copy(fileInputStream,outputStream);
+                IOUtil.closeStream(fileInputStream,outputStream);
+            }
+            @Override
+            public void run() {
+                if (files==null)return ;
+                for(int i=start;i<end;i++){
+                    try {
+                        start(files[i]);
+                    } catch (IOException e) {
+                        log.warn(files[i].getAbsolutePath()+"移动失败!"+e.getMessage());
+                    }
+                }
+                latch.countDown();
+            }
+        }
+        //将排好序的文件移动到merge目录并且重命名
+        public static void cpDirAndRename(String inDir,String outDir,int threadNum) throws IOException, InterruptedException {
+            log.info("----------------------------------------------------------------------------------------------");
+            log.info("从"+inDir+"移动文件到"+outDir+"目录并重命名");
+            File file=new File(inDir);
+            File[] files = file.listFiles();
+            int len=files.length;
+            int actualNum=ThreadTool.computeThreadNum(len,threadNum,10);
+            CountDownLatch latch=new CountDownLatch(actualNum);
+            int start=0,end=0;
+            int every=ThreadTool.every(len,actualNum);
+            log.info("配置参数:线程数量:"+threadNum+":实际复制文件线程数量:"+actualNum+":每个线程分配任务数量:"+every);
+            for (int i=0;i<actualNum;i++){
+                start=end;
+                end=(end+every)>len?len:end+every;
+                ThreadTool.submit(new cpTask(files,start,end,latch,outDir));
+            }
+            latch.await();
+            log.info("----------------------------------------------------------------------------------------------");
         }
     }
 
-
+    private static class ThreadTool{
+        private static ThreadPoolExecutor executor=new ThreadPoolExecutor(130,1400,100, TimeUnit.SECONDS,new ArrayBlockingQueue(100));
+        private static int computeThreadNum(int len,int threadNum,int threshold){
+            if (threadNum==0){
+                log.error("错误的配置参数:threadNum:"+threadNum);
+                System.exit(1);
+            }
+            int actualNum=0;
+            if (len<10)actualNum=1;
+            if (len<10){
+                actualNum=1;
+            }else if (len/threadNum>=threshold){
+                actualNum=threadNum;
+            }else if (len/threadNum<threshold){
+                actualNum=every(len,threshold);
+            }
+            return actualNum;
+        }
+        private static int every(int len,int num){
+            return len%num==0?len/num:len/num+1;
+        }
+        private static void submit(Runnable runnable){
+            executor.submit(runnable);
+        }
+        private static void submit(Callable callable){
+            executor.submit(callable);
+        }
+        private static void shutdown(){
+            executor.shutdown();
+        }
+    }
 
     private static class MergeFile{
+        public static void mergeFile(String mergePath,int level,int id) throws Exception {
+            log.info("----------------------------------------------------------------------------------------------");
+            log.info("开始合并文件");
+            mergeAllFileRecursive(mergePath,level,id);
+            log.info("文件合并完成!");
+            log.info("----------------------------------------------------------------------------------------------");
+        }
+        private static void mergeAllFileThread(String mergePath,int level,int id){
+
+        }
         //递归合并所有文件(level 和 id 是用来给文件命名的)
-        public static int mergeAllFile(String mergePath,int level,int id) throws Exception {
+        private static int mergeAllFileRecursive(String mergePath,int level,int id) throws Exception {
             File file=new File(mergePath);
             File[] files = file.listFiles();
             if (files.length==1){
-                System.out.println("合并完成!");
                 return 0;
             }else {
                 //两个两个文件合并
@@ -207,23 +295,23 @@ public class outerSort extends AbstractSort {
                     if (i < files.length && (i + 1) < files.length) {
                         File oneFile = files[i];
                         File twoFile = files[i + 1];
-                        mergeFile(oneFile.getAbsolutePath(), twoFile.getAbsolutePath(), mergePath,level,id++);
+                        mergeTwoFile(oneFile.getAbsolutePath(), twoFile.getAbsolutePath(), mergePath,level,id++);
                         FileUtil.delete(oneFile);
                         FileUtil.delete(twoFile);
                     } else {
                         break;
                     }
                 }
-                return mergeAllFile(mergePath,level+1,0);
+                return mergeAllFileRecursive(mergePath,level+1,0);
             }
         }
 
         //归并排序合并两个文件
-        public static void mergeFile(String onePath,String twoPath,String mergedFilePath,int level,int id)throws Exception{
+        public static void mergeTwoFile(String onePath,String twoPath,String mergedFilePath,int level,int id)throws Exception{
             File file1=new File(onePath);
             File file2=new File(twoPath);
-            MergedBufferedReader one=new MergedBufferedReader(IOUtil.BufferedReader(file1));
-            MergedBufferedReader two=new MergedBufferedReader(IOUtil.BufferedReader(file2));
+            MergedBufferedReader one=new MergedBufferedReader(IOUtil.BufferedReader(file1,40960000));
+            MergedBufferedReader two=new MergedBufferedReader(IOUtil.BufferedReader(file2,40960000));
             String mergeFileName=Rename.getMergeFileName(level,id);
             BufferedWriter writer=IOUtil.BufferedWriter(mergedFilePath+mergeFileName);
             int[] temp=new int[(int) LINE_COUNT];
@@ -271,11 +359,11 @@ public class outerSort extends AbstractSort {
             one.close();
             two.close();
         }
-
     }
 
 
     private static class SortFile{
+        private static final int TaskNumThreshold=10;
         private static class SortTask implements Callable<Long> {
             private File[] files;
             private int lineCount;
@@ -289,49 +377,61 @@ public class outerSort extends AbstractSort {
                 this.end=end;
                 this.latch=latch;
             }
+
+            @Override
+            public String toString() {
+                return " (start:"+start+",end:"+end+",len:"+files.length+",lineCount:"+lineCount+") ";
+            }
+
             @Override
             public Long call() {
                 long count=0;
-                if (files!=null){
-                    for(int i=start;i<end;i++){
-                        File file1=files[i];
-                        if (file1.isFile()){
-                            try {
-                                count+=sortOneFile(file1.getAbsolutePath(),orderPath,Rename.orderName(file1.getName()),lineCount);
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
+                try {
+                    if (files == null) return count;
+                    for (int i = start; i < end; i++) {
+                        File file1 = files[i];
+                        if (!file1.isFile()) continue;
+                        try {
+                            count += sortOneFile(file1.getAbsolutePath(), orderPath, Rename.orderName(file1.getName()), lineCount);
+                        } catch (Exception e) {
+                            log.error("排序单个文件失败!" + toString() + file1.getAbsolutePath() + e.getMessage());
                         }
                     }
+                    latch.countDown();
+                }catch (Throwable e){
+                    log.info("异常:"+e.getMessage());
+                    latch.countDown();
                 }
-                latch.countDown();
                 return count;
             }
 
         }
-        //排序所有文件
-        public static void sortAllFile(String path,int lineCount,int threadNum) throws Exception {
+        //排序所有文件  将一个数组的所有内容分给多个线程去处理   数组大小100   线程数 9
+//        第一种  100/9=11 11不够 ,所以12个   那么就是 0-12 12-24 24-36 36-48 48-60 60-72 72-84 84-96 96-100
+//        每个线程处理平均任务数量+1 ,最后一个线程处理剩下很少的个数
+//        第二种  100/9=11   0-11 11-22 22-33 33-44 44-55 55-66 66-77 77-88 88-100
+//        前八个线程处理9个,最后一个线程处理最后所有的
+//        如果数组大小3   线程数量9   此时不应该开启过多线程   需要设置一个阈值  规定每个线程最少处理10个文件的排序
+//        选择第一种  因为第二种可能存在最后一个任务处理将近两倍的任务数量
+        public static void sortAllFile(String path,int lineCount,int threadNum,int threshold) throws Exception {
+            log.info("----------------------------------------------------------------------------------------------");
             File file=new File(path);
             File[] files = file.listFiles();
-            long numCount=0;
-            int everyTask=(files.length%threadNum==0)?files.length/ threadNum:files.length/threadNum+1;
-            CountDownLatch latch=new CountDownLatch(threadNum);
-            int start=0,end=start+everyTask;
-            for (int i=0;i<threadNum;i++){
-
-                executor.submit(new SortTask(files,start,end,lineCount,latch));
+            int len=files.length;
+            int actualNum=ThreadTool.computeThreadNum(len,threadNum,threshold);
+            CountDownLatch latch=new CountDownLatch(actualNum);
+            int start=0,end=0;
+            int every=ThreadTool.every(len,actualNum);
+            log.info("配置参数--线程数量:"+threadNum+",任务阈值:"+threshold+",实际排序线程数量:"+actualNum+",每个线程分配任务数量:"+every);
+            for (int i=0;i<actualNum;i++){
+                start=end;
+                end=(end+every>len)?len:every+end;
+                ThreadTool.submit(new SortTask(files,start,end,lineCount,latch));
             }
             latch.await();
-//            for (int i=0;i<files.length;i++) {
-//                File file1 = files[i];
-//                if (file1.isFile()){
-//                    numCount+=sortOneFile(file1.getAbsolutePath(),orderPath,Rename.orderName(file1.getName()),lineCount);
-//                }
-//            }
-            System.out.println("排序完成-----------总数字:"+numCount);
+            log.info("------------排序完成-----------");
+            log.info("----------------------------------------------------------------------------------------------");
         }
-
-
         //通过快排排序拆分后的单个文件,并将排序后的内容写入到另一个文件(必须保证拆分后的单个文件能全部放入内存,通过拆分行数控制拆分文件大小)
         private static int sortOneFile(String path,String orderPath,String fileName,int lineCount)throws Exception{
             int[] oneFileArray = getOneFileArray(path);
@@ -358,7 +458,7 @@ public class outerSort extends AbstractSort {
             writer.flush();
             IOUtil.closeStream(writer);
         }
-        //快排
+        //快速排序
         private static void quickSort(int[] array,int start,int end){
             int low=start,high=end,key=array[start];
             while (low<high){
@@ -398,7 +498,8 @@ public class outerSort extends AbstractSort {
          * count:多少行拆分为一个文件
          * */
         private static void splitFile(String path,String outputPath,int count)throws Exception{
-            System.out.println("开始拆分文件:"+path+":每"+count+"行拆分为一个文件!");
+            log.info("----------------------------------------------------------------------------------------------");
+            log.info("开始拆分文件:"+path+":每"+count+"行拆分为一个文件!");
             File file=new File(path);
             FileInputStream fileInputStream=new FileInputStream(file);
             BufferedReader reader=new BufferedReader(new InputStreamReader(fileInputStream,"utf-8"));
@@ -430,17 +531,19 @@ public class outerSort extends AbstractSort {
             }
             writer.flush();
             writer.close();
-            System.out.println("文件拆分完毕:"+outputPath+"("+fileIncre+")");
+            log.info("文件拆分完毕:"+outputPath+"("+fileIncre+")");
+            log.info("----------------------------------------------------------------------------------------------");
         }
     }
 
 
     private static class PrepareFile{
         //造数据
-        public static void PrepareFile(int maxValue,int numCount,int lineCount) throws IOException {
-            System.out.println("开始生成文件");
+        public static void PrepareFile(String path,int maxValue,int numCount,int lineCount) throws IOException {
+            log.info("----------------------------------------------------------------------------------------------");
+            log.info("开始生成文件");
             Random random=new Random();
-            BufferedWriter writer = IOUtil.BufferedWriter(file, "utf-8");
+            BufferedWriter writer = IOUtil.BufferedWriter(path, "utf-8");
             StringBuilder builder=new StringBuilder();
             int count=0,totalLines=0;
             for (int i=1;i<=numCount;i++){
@@ -459,7 +562,12 @@ public class outerSort extends AbstractSort {
             }
             writer.flush();
             IOUtil.closeStream(writer);
-            System.out.println("文件生成完毕:"+file+":生成数字总数:"+NUM_COUNT+":总行数:"+totalLines+":每行数字个数:"+LINE_COUNT);
+            File file=new File(path);
+            long mb = file.length() / 1024 / 1024;
+            long gb = mb/(long)1024;
+            log.info("文件生成完毕:"+":生成数字总数:"+numCount+":总行数:"+totalLines+":每行数字个数:"+lineCount);
+            log.info("文件生成完毕:"+file+":文件大小"+mb+"MB,"+gb+"GB");
+            log.info("----------------------------------------------------------------------------------------------");
         }
     }
     @Override
