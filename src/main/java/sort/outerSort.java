@@ -18,7 +18,7 @@ public class outerSort extends AbstractSort {
     private static final String splitPath="E:\\outerSort\\split\\";//拆分后文件放置的目录
     private static final String orderPath="E:\\outerSort\\ordered\\";//单个文件排序后放置的目录
     private static final String mergePath="E:\\outerSort\\merge\\";//最后归并的目录
-    private static boolean init=true;//初始化并清空相关目录
+    private static boolean init=false;//初始化并清空相关目录
     private static final int NUM_COUNT=111111111;//生成的原始文件数字个数
     private static final int LINE_COUNT=400;//每行数字个数
     private static final int splitLine=50;//拆分文件时多少行拆分为一个文件
@@ -36,6 +36,8 @@ public class outerSort extends AbstractSort {
 
     }
     public static void main(String args[]) throws Exception {
+
+
         StartWatch instance = StartWatch.instance();
         instance.init();
         PrepareFile.PrepareFile(file,Integer.MAX_VALUE,NUM_COUNT,LINE_COUNT);
@@ -53,9 +55,9 @@ public class outerSort extends AbstractSort {
 
     }
     //一些验证的方法
-    private static class Verify{
+    public static class Verify{
         //验证排序结果是否正确
-        private static void valid(String inpath) throws IOException {
+        public static void valid(String inpath) throws IOException {
             log.info("----------------------------------------------------------------------------------------------");
             BufferedReader reader=IOUtil.BufferedReader(inpath);
             String msg="";
@@ -77,7 +79,7 @@ public class outerSort extends AbstractSort {
             log.info("----------------------------------------------------------------------------------------------");
         }
         //统计目录下所有文件中数字总数
-        private static long checkDirCount(String dir) throws IOException {
+        public static long checkDirCount(String dir) throws IOException {
             File file=new File(dir);
             File[] files = file.listFiles();
             long count=0;
@@ -89,7 +91,7 @@ public class outerSort extends AbstractSort {
             return count;
         }
         //统计单个文件中数字总数
-        private static long checkCount(String inPath) throws IOException {
+        public static long checkCount(String inPath) throws IOException {
             BufferedReader reader=IOUtil.BufferedReader(inPath);
             String msg=null;
             long count=0;
@@ -102,13 +104,13 @@ public class outerSort extends AbstractSort {
         }
     }
     //其他工具
-    private static class OtherTool{
-        private static String getMergePath(){
+    public static class OtherTool{
+        public static String getMergePath(){
             return new File(mergePath).listFiles()[0].getAbsolutePath();
         }
 
         //将一个字符串转化为一个int数组
-        private static int[] transferToIntArray(String msg){
+        public static int[] transferToIntArray(String msg){
             String[] split = msg.split(",");
             int[] intArr=new int[split.length];
             for (int i = 0; i < split.length; i++) {
@@ -117,7 +119,7 @@ public class outerSort extends AbstractSort {
             return intArr;
         }
         //将一个int数组指定区间的数组转化为字符串
-        private static String transferToString(int[] ints,int start,int end){
+        public static String transferToString(int[] ints,int start,int end){
             StringBuilder builder=new StringBuilder();
             for (int i=start;i<end;i++){
                 builder.append(ints[i]).append(",");
@@ -125,23 +127,23 @@ public class outerSort extends AbstractSort {
             builder.deleteCharAt(builder.length()-1);
             return builder.toString();
         }
-        private static void writeAndFlush(BufferedWriter writer,String s) throws IOException {
+        public static void writeAndFlush(BufferedWriter writer,String s) throws IOException {
             writer.write(s);
             writer.newLine();
             writer.flush();
         }
-        private static void clearBuildAndFlush(StringBuilder builder,BufferedWriter writer) throws IOException {
+        public static void clearBuildAndFlush(StringBuilder builder,BufferedWriter writer) throws IOException {
             builder.deleteCharAt(builder.length()-1);
             writeAndFlush(writer,builder.toString());
             builder.delete(0,builder.length());
         }
     }
     //封装一个BufferedReader,通过nextInt方法读取下一个数字
-    private static class MergedBufferedReader{
-        private BufferedReader reader;
-        private String msg;
-        private int[] array;
-        private int index=0;
+    public static class MergedBufferedReader{
+        public BufferedReader reader;
+        public String msg;
+        public int[] array;
+        public int index=0;
         public static final int FINISHED=-999999999;
         public MergedBufferedReader(BufferedReader reader){
             this.reader=reader;
@@ -163,7 +165,7 @@ public class outerSort extends AbstractSort {
         }
     }
 
-    private static class Rename{
+    public static class Rename{
         //排序后的文件命名格式
         public static String orderName(String splitName){
             return "order-"+getSplitId(splitName);
@@ -173,18 +175,18 @@ public class outerSort extends AbstractSort {
             return orderName.split("-")[1];
         }
         //拆分文件命名
-        private static String splitName(int id){
+        public static String splitName(int id){
             return "split-"+id;
         }
         //通过拆分文件名提取id
-        private static String getSplitId(String name){
+        public static String getSplitId(String name){
             return name.split("-")[1];
         }
         //merge文件命名格式
-        private static String getMergeFileName(int level,int id){
+        public static String getMergeFileName(int level,int id){
             return "merge-"+level+"-"+id;
         }
-        private static class cpTask implements Runnable{
+        public static class cpTask implements Runnable{
             private File[] files;
             private int start;
             private int end;
@@ -239,9 +241,9 @@ public class outerSort extends AbstractSort {
         }
     }
 
-    private static class ThreadTool{
-        private static ThreadPoolExecutor executor=new ThreadPoolExecutor(130,1400,100, TimeUnit.SECONDS,new ArrayBlockingQueue(100));
-        private static int computeThreadNum(int len,int threadNum,int threshold){
+    public static class ThreadTool{
+        public static ThreadPoolExecutor executor=new ThreadPoolExecutor(130,1400,100, TimeUnit.SECONDS,new ArrayBlockingQueue(100));
+        public static int computeThreadNum(int len,int threadNum,int threshold){
             if (threadNum==0){
                 log.error("错误的配置参数:threadNum:"+threadNum);
                 System.exit(1);
@@ -257,21 +259,21 @@ public class outerSort extends AbstractSort {
             }
             return actualNum;
         }
-        private static int every(int len,int num){
+        public static int every(int len,int num){
             return len%num==0?len/num:len/num+1;
         }
-        private static void submit(Runnable runnable){
+        public static void submit(Runnable runnable){
             executor.submit(runnable);
         }
-        private static void submit(Callable callable){
+        public static void submit(Callable callable){
             executor.submit(callable);
         }
-        private static void shutdown(){
+        public static void shutdown(){
             executor.shutdown();
         }
     }
 
-    private static class MergeFile{
+    public static class MergeFile{
         public static void mergeFile(String mergePath,int level,int id) throws Exception {
             log.info("----------------------------------------------------------------------------------------------");
             log.info("开始合并文件");
@@ -279,11 +281,11 @@ public class outerSort extends AbstractSort {
             log.info("文件合并完成!");
             log.info("----------------------------------------------------------------------------------------------");
         }
-        private static void mergeAllFileThread(String mergePath,int level,int id){
+        public static void mergeAllFileThread(String mergePath,int level,int id){
 
         }
         //递归合并所有文件(level 和 id 是用来给文件命名的)
-        private static int mergeAllFileRecursive(String mergePath,int level,int id) throws Exception {
+        public static int mergeAllFileRecursive(String mergePath,int level,int id) throws Exception {
             File file=new File(mergePath);
             File[] files = file.listFiles();
             if (files.length==1){
@@ -362,9 +364,9 @@ public class outerSort extends AbstractSort {
     }
 
 
-    private static class SortFile{
-        private static final int TaskNumThreshold=10;
-        private static class SortTask implements Callable<Long> {
+    public static class SortFile{
+        public static final int TaskNumThreshold=10;
+        public static class SortTask implements Callable<Long> {
             private File[] files;
             private int lineCount;
             private int start;
@@ -433,14 +435,14 @@ public class outerSort extends AbstractSort {
             log.info("----------------------------------------------------------------------------------------------");
         }
         //通过快排排序拆分后的单个文件,并将排序后的内容写入到另一个文件(必须保证拆分后的单个文件能全部放入内存,通过拆分行数控制拆分文件大小)
-        private static int sortOneFile(String path,String orderPath,String fileName,int lineCount)throws Exception{
+        public static int sortOneFile(String path,String orderPath,String fileName,int lineCount)throws Exception{
             int[] oneFileArray = getOneFileArray(path);
             quickSort(oneFileArray,0,oneFileArray.length-1);
             writeToFile(oneFileArray,orderPath+fileName,lineCount);
             return oneFileArray.length;
         }
         //将int数组内容以都好分割拼接并写入文件,LINE_COUNT控制一行多少个数字
-        private static void writeToFile(int[] array,String outPath,int lineCount)throws Exception{
+        public static void writeToFile(int[] array,String outPath,int lineCount)throws Exception{
             File file=new File(outPath);
             if (!file.exists())file.createNewFile();
             BufferedWriter writer=IOUtil.BufferedWriter(file,"utf-8");
@@ -459,7 +461,7 @@ public class outerSort extends AbstractSort {
             IOUtil.closeStream(writer);
         }
         //快速排序
-        private static void quickSort(int[] array,int start,int end){
+        public static void quickSort(int[] array,int start,int end){
             int low=start,high=end,key=array[start];
             while (low<high){
                 while (low<high&&array[high]>=key){
@@ -474,7 +476,7 @@ public class outerSort extends AbstractSort {
             if (high!=end)quickSort(array,low+1,end);
         }
         //获取单个文件的内容
-        private static int[] getOneFileArray(String inPath)throws Exception{
+        public static int[] getOneFileArray(String inPath)throws Exception{
             BufferedReader reader=IOUtil.BufferedReader(inPath,"utf-8");
             String msg=null;
             StringBuilder builder=new StringBuilder();
@@ -491,13 +493,13 @@ public class outerSort extends AbstractSort {
     }
 
 
-    private static class SplitFile{
+    public static class SplitFile{
         /*
          * path:原始数据文件路径
          * outputPath:输出路径 E:\\split\\
          * count:多少行拆分为一个文件
          * */
-        private static void splitFile(String path,String outputPath,int count)throws Exception{
+        public static void splitFile(String path,String outputPath,int count)throws Exception{
             log.info("----------------------------------------------------------------------------------------------");
             log.info("开始拆分文件:"+path+":每"+count+"行拆分为一个文件!");
             File file=new File(path);
@@ -537,7 +539,7 @@ public class outerSort extends AbstractSort {
     }
 
 
-    private static class PrepareFile{
+    public static class PrepareFile{
         //造数据
         public static void PrepareFile(String path,int maxValue,int numCount,int lineCount) throws IOException {
             log.info("----------------------------------------------------------------------------------------------");

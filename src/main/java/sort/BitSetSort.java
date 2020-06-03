@@ -1,26 +1,23 @@
 package sort;
 
 import CommonUtil.IOUtil;
+import lombok.extern.slf4j.Slf4j;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Logger;
-
+@Slf4j
 public class BitSetSort {
     private static Logger logger = Logger.getLogger(BitSetSort.class.getName());
-
+    //33554432 long类型数组大小
     public static void main(String args[]) throws Exception {
-//        computeNeedSize(1750000000);
-        int[] x=new int[10];
-        System.arraycopy(x,0,x,0,111);
-//        long[] x=new long[50000000];
-//        BitSetSortDemo();
+        BitSetSortDemo();
+        outerSort.Verify.valid("E:\\outerSort\\BitSetSortedData");
+
     }
     public static void fillBitSet(BitSet bitSet,HashMap<Integer,Integer> map,int[] array) throws InterruptedException {
         try {
@@ -45,20 +42,21 @@ public class BitSetSort {
         }
     }
     public static void computeNeedSize(long maxValue){
-        System.out.println("最大数字:"+maxValue);
-        System.out.println("long数组所需大小:"+maxValue/64);
-        System.out.println("long数组大小:"+maxValue/8/1024+"KB");
-        System.out.println("long数组大小:"+maxValue/8/1024/1024+"MB");
-        System.out.println("long数组大小:"+maxValue/8/1024/1024/1024+"GB");
-
+        long nums=maxValue/64;
+        DecimalFormat format=new DecimalFormat("0.00");
+        float KB=  (float)maxValue/8f/1024;
+        float MB=  (float)maxValue/8f/1024/1024;
+        float GB=  (float)maxValue/8f/1024/1024/1024;
+        String KBS=format.format(KB);
+        String MBS=format.format(MB);
+        String GBS=format.format(GB);
+        logger.info("最大数字:"+maxValue+",long数组个数:"+nums+" 大小:"+KBS+"K,"+MBS+"M,"+GBS+"G");
     }
-    static String  base = "string";
     public static void BitSetSortDemo() throws IOException, InterruptedException {
         BitSet bitSet=new BitSet();
         HashMap<Integer,Integer> map=new HashMap();
         String path="E:\\outerSort\\data";
         long maxValue=maxValue(path);
-        System.out.println(maxValue);
         computeNeedSize(maxValue);
 
         BufferedReader reader= IOUtil.BufferedReader(path);
@@ -70,8 +68,8 @@ public class BitSetSort {
                 fillBitSet(bitSet,map,ints);
             }
         }
+        logger.info("填充完毕!"+map.size());
 
-        System.out.println(bitSet.size());
         forBitSet1(bitSet,map);
     }
     public static long maxValue(String path) throws IOException {
@@ -89,12 +87,20 @@ public class BitSetSort {
         }
         return maxValue;
     }
-    public static void forBitSet1(BitSet bitSet,HashMap<Integer,Integer> map){
+    public static void forBitSet1(BitSet bitSet,HashMap<Integer,Integer> map) throws IOException, InterruptedException {
+        System.gc();
         StringBuilder builder=new StringBuilder();
         int i=bitSet.nextSetBit(0);
+
+
         if (i==-1)return;
         builder.append(i);
-        int sum=1;
+
+        int threshold=1000;
+        int thresholdCount=1;
+        BufferedWriter writer = IOUtil.BufferedWriter("E:\\outerSort\\BitSetSortedData");
+
+
         while (true){
             i++;
             i= bitSet.nextSetBit(i);
@@ -103,39 +109,24 @@ public class BitSetSort {
                 int count=map.get(i);
                 for (int j=0;j<count;j++){
                     builder.append(",").append(i);
-                    sum++;
+                    thresholdCount++;
                 }
+                map.remove(i);
             }
             builder.append(",").append(i);
-            sum++;
-        }
-        System.out.println(sum);
-        System.out.println(builder.length());
-    }
-    public static void forBitSet(BitSet bitSet){
-
-        StringBuilder builder=new StringBuilder();
-        builder.append('{');
-
-        int i = bitSet.nextSetBit(0);
-        int sum=0;
-        if (i != -1) {
-            int len=10;
-            builder.append(i);
-            while (true) {
-                if (++i < 0) break;
-                if ((i = bitSet.nextSetBit(i)) < 0) break;
-                int endOfRun = bitSet.nextClearBit(i);
-                do {
-                    builder.append(", ").append(i);
-                    sum++;
-                } while (++i != endOfRun);
-                len--;
-//                if (len<0)break;
+            thresholdCount++;
+            if (thresholdCount==threshold){
+                writer.write(builder.toString());
+                writer.newLine();
+                writer.flush();
+                builder.delete(0,builder.length());
+                thresholdCount=0;
             }
         }
-        System.out.println(sum);
-//        System.out.println(builder.toString());
+        writer.write(builder.toString());
+        writer.flush();
+        writer.close();
+        builder=null;
     }
     //将一个字符串转化为一个int数组
     private static int[] transferToIntArray(String msg){

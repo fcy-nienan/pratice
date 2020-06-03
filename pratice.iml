@@ -9,6 +9,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../util/target/util-1.0-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.14.4" level="project" />
     <orderEntry type="library" name="Maven: fcy:Util:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.12" level="project" />
